@@ -1,0 +1,69 @@
+.projectCardContainer {
+    height: 300px;
+    border-radius: 40px;
+    padding: 40px;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: box-shadow .3s;
+}
+
+.projectCardContainer > h1 {
+    font-family: 'Lalezar', sans-serif;
+    font-weight: normal;
+    font-size: 3rem;
+    line-height: 3rem;
+    position: relative;
+    z-index: 5;
+    
+}
+
+.projectCardContainer > p {
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    z-index: 5;
+}
+
+.projectCardContainer > img {
+    width: 260px;
+    float: right;
+    position: relative;
+    z-index: 5;
+    
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    left: 40%;
+    top: 40%;
+    transform: 
+        translate(-50%, -50%)
+        rotate(-10deg);
+    position: absolute;
+    z-index: 1;
+    opacity: .04;
+}
+
+.background > img {
+    width: 120%;
+    height: auto;
+    transition: transform .3s;
+}
+
+.projectCardContainer:hover {
+    box-shadow: 0 0 31px rgba(0, 0, 0, 0.3)  ; 
+	-webkit-box-shadow: 0 0 31px rgba(0, 0, 0, 0.3)  ; 
+	-moz-box-shadow: 0 0 31px rgba(0, 0, 0, 0.3)  ; 
+}
+
+.projectCardContainer:hover .background > img {
+    transform: scale(1.4);
+}
+
+@media (max-width: 500px) {
+    .projectCardContainer > p {
+        margin-bottom: 10px;
+    }
+}
