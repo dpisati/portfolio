@@ -5,19 +5,20 @@ import styles from './styles.module.css';
 
 // import dpLogo from '../../assets/images/logo.svg'
 
-export default function Header() {
+export default function Header({isLandingPage}) {
     return (
         <header className={styles.headerContainer}>
             <div className={styles.headerContainerInner}>
-                <img className={styles.logo} src="/logo.svg" alt="DP" />
+                <Link href="/">
+                    <img className={styles.logo} src="/logo.svg" alt="DP" />
+                </Link>
                 <div className={styles.linksContainer}>
-                    <Link href="#work">
+                    <Link href={isLandingPage ? "#work" : "/#work"}>
                         <a>Work</a>
                     </Link>
-                    <Link href="#about">
+                    <Link href={isLandingPage ? "#about" : "/#about"}>
                         <a>About</a>
                     </Link>
-                    
                     <a href="mailto:dpisati@gmail.com">Contact</a>
                 </div>
             </div>

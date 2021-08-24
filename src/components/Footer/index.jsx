@@ -3,12 +3,14 @@ import Link from 'next/link'
 
 import styles from './styles.module.css'
 
-export default function Footer() {
+export default function Footer({isLandingPage}) {
     return (
         <footer className={styles.footerContainer}>
             <div className={styles.footerContainerInner}>
                 <section>
-                    <img src="/logo.svg" alt="Daniel Pisati" />
+                    <Link href="/">
+                        <img src="/logo.svg" alt="Daniel Pisati" />
+                    </Link>
                     <div className={styles.nameContainer}>
                         <h3>Daniel Pisati</h3>
                         <p>
@@ -19,7 +21,7 @@ export default function Footer() {
                     </div>
                 </section>
                 <aside>
-                    <Link href="#work">
+                    <Link href={isLandingPage ? "#work" : "/#work"}>
                         <a>Work</a>
                     </Link>
                     <a href="mailto:dpisati@gmail.com">

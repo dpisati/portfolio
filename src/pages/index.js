@@ -19,7 +19,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header />
+      <Header isLandingPage={true}/>
       <Hero />
 
       <span 
@@ -36,7 +36,7 @@ export default function Home() {
       </div>
 
       <About />
-      <Footer />
+      <Footer isLandingPage={true}/>
     </div>
   )
 }
