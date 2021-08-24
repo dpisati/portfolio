@@ -12,7 +12,7 @@ export default function About() {
             <main>
                 <h1>About</h1>
                 <p>
-                    Hi, I'm Daniel Pisati, an UX / UI Designer 
+                    Hi, Im Daniel Pisati, an UX / UI Designer 
                     and frontend developer 🚀 from Brazil. 
                     Currently I live in Christchurch/New Zealand.
                 </p>
