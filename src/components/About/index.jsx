@@ -18,22 +18,22 @@ export default function About() {
                 </p>
 
                 <div className={styles.contactsContainer}>
-                    <a href="https://www.facebook.com/daniel.pisati" target="_blank">
+                    <a href="https://www.facebook.com/daniel.pisati" target="_blank" rel="noreferrer">
                         <div className={`${styles.contact} ${styles.facebook}`}>
                             <img src="/assets/icons/facebook.svg" alt="facebook" />
                         </div>
                     </a>
-                    <a href="https://www.linkedin.com/in/daniel-pisati/" target="_blank">
+                    <a href="https://www.linkedin.com/in/daniel-pisati/" target="_blank" rel="noreferrer">
                         <div className={`${styles.contact} ${styles.linkedin}`}>
                             <img src="/assets/icons/linkedin.svg" alt="linkedin" />
                         </div>
                     </a>
-                    <a href="https://github.com/dpisati" target="_blank">
+                    <a href="https://github.com/dpisati" target="_blank" rel="noreferrer">
                         <div className={`${styles.contact} ${styles.github}`}>
                             <img src="/assets/icons/github.svg" alt="github" />
                         </div>
                     </a>
-                    <a href="mailto:dpisati@gmail.com" target="_blank">                        
+                    <a href="mailto:dpisati@gmail.com">
                         <div className={`${styles.contact} ${styles.email}`}>
                             <img src="/assets/icons/email.svg" alt="email" />
                         </div>
