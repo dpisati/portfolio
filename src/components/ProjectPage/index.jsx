@@ -46,7 +46,7 @@ export default function ProjectPage({ project }) {
 
                             {project.tools.map(tool => {
                                 return (
-                                    <div className={styles.tool}>
+                                    <div key={tool.name} className={styles.tool}>
                                         <img src={tool.icon} alt={tool.name} />
                                         <p>{tool.name}</p>
                                     </div>
