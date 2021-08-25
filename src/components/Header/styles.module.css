@@ -21,8 +21,7 @@
     justify-content: space-between;
     font-family: 'Oxanium', sans-serif;
     font-weight: bold;
-
-    
+   
 }
 
 .logo {
@@ -46,6 +45,13 @@
 @media (max-width: 665px) {
     .headerContainer {
         padding: 0 20px;
+        height: 80px;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.1)  ; 
+        -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1)  ; 
+        -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1)  ; 
+    }
+    .logo {
+        height: 30px
     }
 }
 

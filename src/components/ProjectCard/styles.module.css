@@ -63,6 +63,14 @@
 }
 
 @media (max-width: 500px) {
+    .projectCardContainer {
+        padding: 40px;
+    }
+    .projectCardContainer > h1 {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
     .projectCardContainer > p {
         margin-bottom: 10px;
     }

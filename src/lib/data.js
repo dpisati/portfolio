@@ -13,6 +13,10 @@ export const projects = [
                 icon: '/assets/icons/react.png'
             },
             {
+                name: 'TypeScript',
+                icon: '/assets/icons/typescript.png'
+            },
+            {
                 name: 'CSS',
                 icon: '/assets/icons/css.png'
             },
@@ -31,10 +35,6 @@ export const projects = [
             {
                 name: 'Whimsical',
                 icon: '/assets/icons/whimsical.png'
-            },
-            {
-                name: 'Photoshop',
-                icon: '/assets/icons/photoshop.png'
             }
         ]
 
@@ -55,6 +55,10 @@ export const projects = [
             {
                 name: 'Next',
                 icon: '/assets/icons/next.png'
+            },
+            {
+                name: 'JavaScript',
+                icon: '/assets/icons/javascript.png'
             },
             {
                 name: 'CSS',
