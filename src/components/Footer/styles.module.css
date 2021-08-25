@@ -60,17 +60,23 @@
 
 
 @media (max-width: 600px) {
+    .footerContainer {
+        height: 80px;
+    }
+    
     .nameContainer {
         display: none;
     }
 
     .footerContainerInner {
         padding: 0 20px;
-        padding-top: 40px;
+        padding-top: 22px;
     }
 
     .footerContainerInner > aside {
         width: 160px;
     }
+
+
     
 }
