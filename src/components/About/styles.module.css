@@ -3,14 +3,17 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 120px;
-    margin-bottom: 140px;
+    margin-bottom: 89px;
     width: 100%;
 }
 
 .imageContainer {
-    width: 100%;
+    width: 120%;
     height: 500px;
-    background-color: #8DD6FF;
+    background: rgb(190,232,255);
+    background: -moz-linear-gradient(227deg, rgba(190,232,255,1) 0%, rgba(82,160,204,1) 100%);
+    background: -webkit-linear-gradient(227deg, rgba(190,232,255,1) 0%, rgba(82,160,204,1) 100%);
+    background: linear-gradient(227deg, rgba(190,232,255,1) 0%, rgba(82,160,204,1) 100%);   
     border-radius: 40px;
     position: relative;
 }
@@ -19,8 +22,8 @@
     position: absolute;
     width: auto;
     left: -80px;
-    top: 0px;
-    max-height: 600px;
+    top: -80px;
+    max-height: 720px;
 
 }
 
@@ -30,6 +33,7 @@
     flex-direction: column;
     position: relative;
     margin-left: 60px;
+    width: 100%;
 }
 
 .aboutContainer > main > h1 {
@@ -42,11 +46,16 @@
 }
 
 .aboutContainer > main > p {
+    width: 80%;
+    margin-left: auto;
     font-family: 'Poppins', sans-serif;
-    font-size: 1.4rem;
-    line-height: 3.2rem;
+    font-size: 1.1rem;
+    line-height: 2.2rem;
     text-align: right;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
+    text-align: justify;
+    text-justify: inter-word;
+    
 }
 
 .contactsContainer {
@@ -80,7 +89,7 @@
 }
 
 .linkedin {
-    background-color: #06E1FF;
+    background-color: #00bfd8;
 }
 
 .github {
@@ -105,8 +114,9 @@
     }
     
     .imageContainer > img {
-        left: -120px;
-        top: -80px;
+        left: -60px;
+        top: -30px;
+        max-height: 600px;
     }
 }
 
@@ -118,10 +128,12 @@
     }
 
     .aboutContainer > main > p {
+        width: 85%;
         font-size: 1.1rem;
         line-height: 2rem;
         margin-top: 60px;
     }
+
 
     .imageContainer {
         min-width: 100px;
@@ -148,16 +160,17 @@
     .aboutContainer > main {
         margin-left: 0px;
     }
-
+   
     .aboutContainer > main > h1 {
         font-size: 4rem;
     }
-
+    
     .aboutContainer > main > p {
-        font-size: 1rem;
-        line-height: 1.8rem;
+        width: 85%;
+        font-size: .8rem;
+        line-height: 1.5rem;
         margin-top: 40px;
-        margin-bottom: 40px;
+        margin-bottom: 20px;
     }
 
     .imageContainer {

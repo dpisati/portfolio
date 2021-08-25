@@ -8,7 +8,14 @@ export default function ProjectCard({ project }) {
         <Link href={`/projects/${project.slug}`}>
             <div 
                 className={styles.projectCardContainer}
-                style={{ backgroundColor: project.color }}
+                style={{ 
+                    backgroundImage:
+                    `linear-gradient(
+                      155deg, 
+                      ${project.color}60,
+                      ${project.color} 70%
+                    )`
+                }}
             >
                 <h1>{project.title}</h1>
                 <p>{project.slogan}</p>

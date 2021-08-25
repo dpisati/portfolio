@@ -12,9 +12,13 @@ export default function About() {
             <main>
                 <h1>About</h1>
                 <p>
-                    Hi, Im Daniel Pisati, an UX / UI Designer 
-                    and frontend developer 🚀 from Brazil. 
-                    Currently I live in Christchurch/New Zealand.
+                I’m <strong>Daniel Pisati</strong>, an designer / developer 
+                based in Christchurch, New Zealand 🌏.
+                My passions are User Interface, 3D illustration, 
+                animation and frontend development. 
+                I’ve had the opportunity to combine my <strong>design</strong> expertise 
+                with <strong>web development</strong>, 🚀
+                combining these two amazing worlds to solve peoples problems.
                 </p>
 
                 <div className={styles.contactsContainer}>

@@ -31,7 +31,13 @@ export default function ProjectPage({ project }) {
                 className={styles.projectContent} 
                 style= {{ border: ` 1px solid ${project.color}` }}
             >
-                <spam style= {{ background: project.color }}></spam>
+                <spam 
+                    style= {{ 
+                        background: project.color
+                    }}
+                >
+                    
+                </spam>
                 <header>
                     <div className={styles.projectTitle}>
                         <h1>{project.title}</h1>
@@ -72,13 +78,14 @@ export default function ProjectPage({ project }) {
                                     href={project.demo} 
                                     target="_blank" 
                                     rel="noreferrer"
+                                    style={{ background: project.color}}
                                 >
                                     Demo
                                 </a>
                             )}
                             {project.github && (
                                 <a 
-                                    href="" 
+                                    href={project.github} 
                                     target="_blank" 
                                     rel="noreferrer"
                                 >
