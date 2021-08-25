@@ -189,7 +189,7 @@
 @media (max-width: 600px) {
     .projectTitle > h1 {
         font-size: 3rem;
-        line-height: 1.4rem;
+        line-height: 3rem;
     }
     
     .projectTitle > h2 {
