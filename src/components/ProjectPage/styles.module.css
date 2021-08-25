@@ -229,6 +229,42 @@
         line-height: 1.8em;
         font-size: 1rem;
     }
+}
 
+@media (max-width: 420px) {
+    .projectTitle > h1 {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    
+    .projectTitle > h2 {
+        font-size: 1rem;
+        margin-top: 15px;
+    }
+
+    .projectContent > header > aside {
+        margin-top: 60px;
+        margin-bottom: 20px;
+    }
+
+    .projectContent > header > aside > p {
+        margin-bottom: 15px;
+    }
+
+
+    .projectDescription {
+        padding-left: 10px;
+    }
+
+
+    .projectDescription > p {
+        font-size: .9rem;
+        line-height: 1.5em;
+    }
+
+    .links > a {
+        height: 40px;
+        padding: 10px 20px;
+    }
     
 }
