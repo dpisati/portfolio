@@ -25,33 +25,29 @@ export default function Home() {
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
         <link rel="manifest" href="/site.webmanifest"/>
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"/>
-        <meta name="msapplication-TileColor" content="#da532c"/>
-        <meta name="theme-color" content="#ffffff"/>
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
         <link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet"/>
 
         <title>Daniel Pisati - Designer / Developer</title>
-        <meta name="title" content="Daniel Pisati - Designer / Developer" />
-        <meta name="description" content="Hi, I'm Daniel Pisati, a UX / UI Designer and frontend developer 🚀" />
-
         
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://dpportfolio.vercel.app/" />
-        <meta property="og:title" content="Daniel Pisati - Designer / Developer" />
-        <meta property="og:description" content="Hi, I'm Daniel Pisati, a UX / UI Designer and frontend developer 🚀" />
-        {/* <meta property="og:image" content="/shareImg.png"/> */}
-        <meta property='og:image' content='https://raw.githubusercontent.com/dpisati/portfolio/main/public/shareImg.png'/>
+        <meta key="metaTitle" name="title" content="Daniel Pisati - Designer / Developer" />
+        <meta key="metaDescription" name="description" content="Hi, I'm Daniel Pisati, a UX / UI Designer and frontend developer 🚀" />
+
+        <meta key="metaColor" name="msapplication-TileColor" content="#da532c"/>
+        <meta key="metaThemeColour" name="theme-color" content="#ffffff"/>
+        
+        <meta key="metaOGTipe" property="og:type" content="website" />
+        <meta key="metaOGUrl" property="og:url" content="https://dpportfolio.vercel.app/" />
+        <meta key="metaOGTitle" property="og:title" content="Daniel Pisati - Designer / Developer" />
+        <meta key="metaOGDescription" property="og:description" content="Hi, I'm Daniel Pisati, a UX / UI Designer and frontend developer 🚀" />
+        <meta key="metaOGImage" property='og:image' content='%PUBLIC_URL%/shareImg.png'/>
                 
-        <meta property="twitter:card" content="summary_large_image"/>
-        <meta property="twitter:url" content="https://dpportfolio.vercel.app/"/>
-        <meta property="twitter:title" content="Daniel Pisati - Designer / Developer"/>
-        <meta property="twitter:description" content="Hi, I'm Daniel Pisati, a UX / UI Designer and frontend developer 🚀" />
-        {/* <meta property="twitter:image" content="/shareImg.png" /> */}
-        <meta property="twitter:image" content="https://raw.githubusercontent.com/dpisati/portfolio/main/public/shareImg.png" />
-
-
-        
+        <meta key="metaTwitterCard" property="twitter:card" content="summary_large_image"/>
+        <meta key="metaTwitterUrl" property="twitter:url" content="https://dpportfolio.vercel.app/"/>
+        <meta key="metaTwitterTitle" property="twitter:title" content="Daniel Pisati - Designer / Developer"/>
+        <meta key="metaTwitterDescription" property="twitter:description" content="Hi, I'm Daniel Pisati, a UX / UI Designer and frontend developer 🚀" />
+        <meta key="metaTwitterImage" property="twitter:image" content="%PUBLIC_URL%/shareImg.png" />
         
       </Head>
 
