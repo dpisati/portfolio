@@ -1,13 +1,36 @@
 import Link from 'next/link'
-import React from 'react'
+import React, { useEffect } from 'react'
+
+
+import { useInView } from 'react-intersection-observer';
+import { motion, useAnimation } from 'framer-motion';
 
 import styles from './styles.module.css'
 
 export default function ProjectCard({ project }) {
+    const { ref, inView } = useInView({ threshold: .2 });
+    const animation = useAnimation();
+  
+    useEffect(() => {  
+      if(inView) {
+        animation.start({
+            opacity: 1,
+            y: 0
+        })
+      } else {
+        animation.start({
+            opacity: 0,
+            y: 100
+        })
+      }
+    }, [inView])
+
     return (
         <Link href={`/projects/${project.slug}`}>
-            <div 
+            <motion.div 
+                animate={animation}
                 className={styles.projectCardContainer}
+                ref={ref}
                 style={{ 
                     backgroundImage:
                     `linear-gradient(
@@ -17,7 +40,10 @@ export default function ProjectCard({ project }) {
                     )`
                 }}
             >
-                <h1>{project.title}</h1>
+                <motion.h1
+                >
+                    {project.title}
+                </motion.h1>
                 <p>{project.slogan}</p>
                 
                 <img src={project.img} alt={project.title + 'preview'} />
@@ -25,7 +51,7 @@ export default function ProjectCard({ project }) {
                 <div className={styles.background}>
                     <img src={project.img} alt={project.title + 'preview'} />
                 </div>
-            </div>
+            </motion.div>
         </Link>
     )
 }

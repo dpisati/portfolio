@@ -1,17 +1,55 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+
+import { useInView } from 'react-intersection-observer';
+import { motion, useAnimation } from 'framer-motion';
 
 import styles from './styles.module.css'
 
+import {
+    container,
+    fadeInRight,
+    fadeInUp
+} from '../../utils/animations.js'
+
 export default function About() {
+    const { ref, inView } = useInView({ threshold: .7 });
+    const containerAnimation = useAnimation();
+    const aboutPictureControl = useAnimation();
+      
+    useEffect(() => {  
+        containerAnimation.start("animate")
+        aboutPictureControl.start("animate")
+
+        if(inView) {
+          containerAnimation.start("animate")
+          aboutPictureControl.start("animate")
+        } else {
+            containerAnimation.start("initial")
+            aboutPictureControl.start("initial")
+        }
+      }, [inView])
+  
     return (
-        <div id="about" className={styles.aboutContainer}>
-            <div className={styles.imageContainer}>
+        <motion.div 
+            id="about" 
+            className={styles.aboutContainer}
+            variants={container}
+            initial="initial"
+            animate={containerAnimation}
+            ref={ref}
+        >
+            <motion.div 
+                initial="initial"
+                variants={fadeInRight}
+                animate={aboutPictureControl}
+                className={styles.imageContainer}
+            >
                 <img src="/assets/images/fullBody.png" alt="Daniel Pisati" />
-            </div>
+            </motion.div>
 
             <main>
-                <h1>About</h1>
-                <p>
+                <motion.h1 variants={fadeInUp}>About</motion.h1>
+                <motion.p variants={fadeInUp}>
                 I’m <strong>Daniel Pisati</strong>, an designer / developer 
                 based in Christchurch, New Zealand 🌏.
                 My passions are User Interface, 3D illustration, 
@@ -19,31 +57,31 @@ export default function About() {
                 I’ve had the opportunity to combine my <strong>design</strong> expertise 
                 with <strong>web development</strong>, 🚀
                 combining these two amazing worlds to solve peoples problems.
-                </p>
+                </motion.p>
 
-                <div className={styles.contactsContainer}>
-                    <a href="https://www.facebook.com/daniel.pisati" target="_blank" rel="noreferrer">
+                <motion.div className={styles.contactsContainer}>
+                    <motion.a variants={fadeInUp} href="https://www.facebook.com/daniel.pisati" target="_blank" rel="noreferrer">
                         <div className={`${styles.contact} ${styles.facebook}`}>
                             <img src="/assets/icons/facebook.svg" alt="facebook" />
                         </div>
-                    </a>
-                    <a href="https://www.linkedin.com/in/daniel-pisati/" target="_blank" rel="noreferrer">
+                    </motion.a>
+                    <motion.a variants={fadeInUp} href="https://www.linkedin.com/in/daniel-pisati/" target="_blank" rel="noreferrer">
                         <div className={`${styles.contact} ${styles.linkedin}`}>
                             <img src="/assets/icons/linkedin.svg" alt="linkedin" />
                         </div>
-                    </a>
-                    <a href="https://github.com/dpisati" target="_blank" rel="noreferrer">
+                    </motion.a>
+                    <motion.a variants={fadeInUp} href="https://github.com/dpisati" target="_blank" rel="noreferrer">
                         <div className={`${styles.contact} ${styles.github}`}>
                             <img src="/assets/icons/github.svg" alt="github" />
                         </div>
-                    </a>
-                    <a href="mailto:dpisati@gmail.com">
+                    </motion.a>
+                    <motion.a variants={fadeInUp} href="mailto:dpisati@gmail.com">
                         <div className={`${styles.contact} ${styles.email}`}>
                             <img src="/assets/icons/email.svg" alt="email" />
                         </div>
-                    </a>
-                </div>
+                    </motion.a>
+                </motion.div>
             </main>
-        </div>
+        </motion.div>
     )
 }

@@ -1,10 +1,12 @@
+import { useEffect } from 'react';
 import Head from 'next/head'
-import Link from 'next/link'
 import About from '../components/About';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
 import ProjectCard from '../components/ProjectCard';
+
+import { motion } from 'framer-motion';
 
 import { projects } from '../lib/data';
 
@@ -12,7 +14,11 @@ import styles from './styles.module.css'
 
 export default function Home() {
   return (
-    <div>
+    <motion.div 
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }} 
+    >
       <Head>
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
@@ -52,16 +58,18 @@ export default function Home() {
         style={{ position: 'relative', top: -110}}
       ></span>
 
-      <div className={styles.projectsContainer}>
+      <div 
+        className={styles.projectsContainer}
+      >
         {projects.map((project => {
           return (
-            <ProjectCard key={project.slug} project={project} />
+              <ProjectCard key={project.slug} project={project}/>
           )
         }))}
       </div>
 
       <About />
       <Footer isLandingPage={true}/>
-    </div>
+    </motion.div>
   )
 }
