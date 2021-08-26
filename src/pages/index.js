@@ -41,13 +41,13 @@ export default function Home() {
         <meta key="metaOGUrl" property="og:url" content="https://dpportfolio.vercel.app/" />
         <meta key="metaOGTitle" property="og:title" content="Daniel Pisati - Designer / Developer" />
         <meta key="metaOGDescription" property="og:description" content="Hi, I'm Daniel Pisati, a UX / UI Designer and frontend developer 🚀" />
-        <meta key="metaOGImage" property='og:image' content='%PUBLIC_URL%/shareImg.png'/>
+        <meta key="metaOGImage" property='og:image' content="https://dpportfolio.vercel.app/shareImg.png"/>
                 
         <meta key="metaTwitterCard" property="twitter:card" content="summary_large_image"/>
         <meta key="metaTwitterUrl" property="twitter:url" content="https://dpportfolio.vercel.app/"/>
         <meta key="metaTwitterTitle" property="twitter:title" content="Daniel Pisati - Designer / Developer"/>
         <meta key="metaTwitterDescription" property="twitter:description" content="Hi, I'm Daniel Pisati, a UX / UI Designer and frontend developer 🚀" />
-        <meta key="metaTwitterImage" property="twitter:image" content="%PUBLIC_URL%/shareImg.png" />
+        <meta key="metaTwitterImage" property="twitter:image" content="https://dpportfolio.vercel.app/shareImg.png" />
         
       </Head>
 
