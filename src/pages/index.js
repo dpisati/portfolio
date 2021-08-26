@@ -40,14 +40,13 @@ export default function Home() {
         <meta property="og:url" content="https://dpportfolio.vercel.app/" />
         <meta property="og:title" content="Daniel Pisati - Designer / Developer" />
         <meta property="og:description" content="Hi, I'm Daniel Pisati, a UX / UI Designer and frontend developer 🚀" />
-        <meta property="og:image" content="/share.png"/>
-
-        
+        <meta property="og:image" content="/shareImg.png"/>
+                
         <meta property="twitter:card" content="summary_large_image"/>
         <meta property="twitter:url" content="https://dpportfolio.vercel.app/"/>
         <meta property="twitter:title" content="Daniel Pisati - Designer / Developer"/>
         <meta property="twitter:description" content="Hi, I'm Daniel Pisati, a UX / UI Designer and frontend developer 🚀" />
-        <meta property="twitter:image" content="/share.png" />
+        <meta property="twitter:image" content="/shareImg.png" />
       </Head>
 
       <Header isLandingPage={true}/>
