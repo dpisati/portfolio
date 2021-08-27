@@ -56,7 +56,7 @@ export default function About() {
                 animation and frontend development. 
                 I’ve had the opportunity to combine my <strong>design</strong> expertise 
                 with <strong>web development</strong>, 🚀
-                combining these two amazing worlds to solve peoples problems.
+                merging these two amazing worlds to solve peoples problems.
                 </motion.p>
 
                 <motion.div className={styles.contactsContainer}>
