@@ -44,12 +44,12 @@ export default function Home() {
         {/* <meta key="metaOGImage" property='og:image' content="http://dpportfolio.vercel.app/shareImg.png"/> */}
         <meta key="metaOGImageHTTPS" property='og:image:secure_url' content="https://dpportfolio.vercel.app/shareImg.png"/>
                 
-        {/* <meta key="metaTwitterCard" property="twitter:card" content="summary_large_image"/>
+        <meta key="metaTwitterCard" property="twitter:card" content="summary_large_image"/>
         <meta key="metaTwitterUrl" property="twitter:url" content="https://dpportfolio.vercel.app/"/>
         <meta key="metaTwitterTitle" property="twitter:title" content="Daniel Pisati - Designer / Developer"/>
         <meta key="metaTwitterDescription" property="twitter:description" content="Hi, I'm Daniel Pisati, a UX / UI Designer and frontend developer 🚀" />
-        <meta key="metaTwitterImage" property="twitter:image" content="http://dpportfolio.vercel.app/shareImg.png" />
-        <meta key="metaTwitterImageHTTPS" property="twitter:image:secure_url" content="https://dpportfolio.vercel.app/shareImg.png" /> */}
+        {/* <meta key="metaTwitterImage" property="twitter:image" content="http://dpportfolio.vercel.app/shareImg.png" /> */}
+        <meta key="metaTwitterImageHTTPS" property="twitter:image:secure_url" content="https://dpportfolio.vercel.app/shareImg.png" />
         
       </Head>
 
