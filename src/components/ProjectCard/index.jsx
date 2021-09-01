@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React, { useEffect } from 'react'
-
+import Image from 'next/image'
 
 import { useInView } from 'react-intersection-observer';
 import { motion, useAnimation } from 'framer-motion';
@@ -48,10 +48,22 @@ export default function ProjectCard({ project }) {
                     <p>{project.slogan}</p>
                 
                 
-                <img src={project.img} alt={project.title + ' preview'} />
+                <Image 
+                    src={project.img} 
+                    alt={project.title + ' preview'} 
+                    width={822}    
+                    height={504}
+                    // layout='fill'
+                    />
 
                 <div className={styles.background}>
-                    <img src={project.img} alt="" />
+                    <Image 
+                        src={project.img} 
+                        alt="" 
+                        width={822}    
+                        height={504}
+                        // layout='fill'
+                        />
                 </div>
             </motion.div>
         </Link>

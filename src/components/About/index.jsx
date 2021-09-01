@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 
 import { useInView } from 'react-intersection-observer';
 import { motion, useAnimation } from 'framer-motion';
-
+import Image from 'next/image'
 import styles from './styles.module.css'
 
 import {
@@ -44,7 +44,13 @@ export default function About() {
                 animate={aboutPictureControl}
                 className={styles.imageContainer}
             >
-                <img src="/assets/images/fullBody.png" alt="Daniel full body 3D character" />
+                <Image 
+                    src="/assets/images/fullBody.png" 
+                    alt="Daniel full body 3D character" 
+                    width={585}    
+                    height={793}
+                    layout='fill'
+                />
             </motion.div>
 
             <main>
@@ -62,22 +68,46 @@ export default function About() {
                 <motion.div className={styles.contactsContainer}>
                     <motion.a variants={fadeInUp} href="https://www.facebook.com/daniel.pisati" target="_blank" rel="noreferrer">
                         <div className={`${styles.contact} ${styles.facebook}`}>
-                            <img src="/assets/icons/facebook.svg" alt="facebook" />
+                            <Image 
+                                src="/assets/icons/facebook.svg" 
+                                alt="facebook" 
+                                width={240}    
+                                height={240}
+                                layout='fill'
+                                />
                         </div>
                     </motion.a>
                     <motion.a variants={fadeInUp} href="https://www.linkedin.com/in/daniel-pisati/" target="_blank" rel="noreferrer">
                         <div className={`${styles.contact} ${styles.linkedin}`}>
-                            <img src="/assets/icons/linkedin.svg" alt="linkedin" />
+                            <Image 
+                                src="/assets/icons/linkedin.svg" 
+                                alt="linkedin" 
+                                width={240}    
+                                height={240}
+                                layout='fill'
+                                />
                         </div>
                     </motion.a>
                     <motion.a variants={fadeInUp} href="https://github.com/dpisati" target="_blank" rel="noreferrer">
                         <div className={`${styles.contact} ${styles.github}`}>
-                            <img src="/assets/icons/github.svg" alt="github" />
+                            <Image 
+                            src="/assets/icons/github.svg" 
+                            alt="github" 
+                            width={240}    
+                                height={240}
+                                layout='fill'
+                            />
                         </div>
                     </motion.a>
                     <motion.a variants={fadeInUp} href="mailto:dpisati@gmail.com">
                         <div className={`${styles.contact} ${styles.email}`}>
-                            <img src="/assets/icons/email.svg" alt="email" />
+                            <Image 
+                            src="/assets/icons/email.svg" 
+                            alt="email" 
+                            width={240}    
+                                height={240}
+                                layout='fill'
+                            />
                         </div>
                     </motion.a>
                 </motion.div>

@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './styles.module.css';
 import { motion } from 'framer-motion';
 import { fadeInUp, container, fadeInRight } from '../../utils/animations.js';
-
+import Image from 'next/image'
 export default function ProjectPage({ project }) {
     return (
         <main className={styles.projectContainer}>
@@ -64,7 +64,12 @@ export default function ProjectPage({ project }) {
                             {project.tools.map(tool => {
                                 return (
                                     <motion.div variants={fadeInUp} key={tool.name} className={styles.tool}>
-                                        <img src={tool.icon} alt={tool.name} />
+                                        <Image 
+                                            src={tool.icon} 
+                                            alt={tool.name} 
+                                            width={240}
+                                            height={240}
+                                            />
                                         <p>{tool.name}</p>
                                     </motion.div>
                                 )
