@@ -50,7 +50,6 @@ export default function Home() {
         <meta key="metaTwitterDescription" property="twitter:description" content="Hi, I'm Daniel Pisati, a UX / UI Designer and frontend developer 🚀" />
         {/* <meta key="metaTwitterImage" property="twitter:image" content="http://dpportfolio.vercel.app/shareImg.png" /> */}
         <meta key="metaTwitterImageHTTPS" property="twitter:image:secure_url" content="https://dpportfolio.vercel.app/shareImg.png" />
-        
       </Head>
 
       <Header isLandingPage={true}/>

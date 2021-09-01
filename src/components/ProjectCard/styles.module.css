@@ -9,7 +9,7 @@
     transition: box-shadow .3s;
 }
 
-.projectCardContainer > h1 {
+.projectCardContainer > h2 {
     font-family: 'Lalezar', sans-serif;
     font-weight: normal;
     font-size: 3rem;
@@ -66,7 +66,7 @@
     .projectCardContainer {
         padding: 40px;
     }
-    .projectCardContainer > h1 {
+    .projectCardContainer > h2 {
         font-size: 2.3rem;
         line-height: 2.5rem;
     }

@@ -40,16 +40,18 @@ export default function ProjectCard({ project }) {
                     )`
                 }}
             >
-                <motion.h1
-                >
-                    {project.title}
-                </motion.h1>
-                <p>{project.slogan}</p>
                 
-                <img src={project.img} alt={project.title + 'preview'} />
+                    <motion.h2
+                    >
+                        {project.title}
+                    </motion.h2>
+                    <p>{project.slogan}</p>
+                
+                
+                <img src={project.img} alt={project.title + ' preview'} />
 
                 <div className={styles.background}>
-                    <img src={project.img} alt={project.title + 'preview'} />
+                    <img src={project.img} alt="" />
                 </div>
             </motion.div>
         </Link>

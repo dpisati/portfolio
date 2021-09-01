@@ -17,7 +17,7 @@ export default function Hero() {
                     </p>
                 </div>
                 <div className={styles.heroImgContainer}>
-                    <img src="/assets/images/hero.png" alt="aa" />
+                    <img src="/assets/images/hero.png" alt="" />
                 </div>
             </div>
         </div>

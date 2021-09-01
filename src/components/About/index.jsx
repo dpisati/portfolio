@@ -44,11 +44,11 @@ export default function About() {
                 animate={aboutPictureControl}
                 className={styles.imageContainer}
             >
-                <img src="/assets/images/fullBody.png" alt="Daniel Pisati" />
+                <img src="/assets/images/fullBody.png" alt="Daniel full body 3D character" />
             </motion.div>
 
             <main>
-                <motion.h1 variants={fadeInUp}>About</motion.h1>
+                <motion.h2 variants={fadeInUp}>About</motion.h2>
                 <motion.p variants={fadeInUp}>
                 I’m <strong>Daniel Pisati</strong>, an designer / developer 
                 based in Christchurch, New Zealand 🌏.

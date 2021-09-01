@@ -9,15 +9,15 @@ export default function Footer({isLandingPage}) {
             <div className={styles.footerContainerInner}>
                 <section>
                     <Link href="/">
-                        <img src="/logo.svg" alt="Daniel Pisati" />
+                        <img src="/logo.svg" alt="DP Logo" />
                     </Link>
                     <div className={styles.nameContainer}>
                         <h3>Daniel Pisati</h3>
-                        <p>
+                        {/* <p>
                             <a href="mailto:dpisati@gmail.com">
                                 dpisati@gmail.com
                             </a>
-                        </p>
+                        </p> */}
                     </div>
                 </section>
                 <aside>
