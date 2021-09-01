@@ -232,6 +232,15 @@
 }
 
 @media (max-width: 420px) {
+    .projectContainer {
+        padding-top: 60px;
+        
+    }
+
+    .projectContent {
+        margin-bottom: 20px;
+    }
+
     .projectTitle > h1 {
         font-size: 2rem;
         line-height: 2rem;
