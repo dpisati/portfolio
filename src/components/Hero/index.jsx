@@ -11,8 +11,8 @@ export default function Hero() {
                 <div className={styles.side}>
                     <h1>Hello</h1>
                     <p>
-                        I’m <strong>Daniel Pisati</strong> UX 
-                        / UI Designer and <br />
+                        I’m <strong>Daniel Pisati</strong> <br />
+                        UX  / UI Designer and
                         Frontend Developer 🚀
                     </p>
                 </div>
