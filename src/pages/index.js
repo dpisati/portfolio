@@ -28,7 +28,7 @@ export default function Home() {
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
         <link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet"/>
-
+        <link rel="preload" as="image" href="/assets/images/hero.png" />
         <title>Daniel Pisati - Designer / Developer</title>
         
         <meta key="metaTitle" name="title" content="Daniel Pisati - Designer / Developer" />
