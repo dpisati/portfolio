@@ -10,10 +10,15 @@ export default function Footer({isLandingPage}) {
             <div className={styles.footerContainerInner}>
                 <section>
                     <Link href="/">
-                        <img 
-                            src="/logo.svg" 
-                            alt="DP Logo" 
+                        <div className={styles.footerLogoContainer}>
+                            <Image 
+                                src="/logo.svg" 
+                                alt="DP Logo"
+                                width={82}  
+                                height={46}
+                                layout="responsive" 
                             />
+                        </div>
                     </Link>
                     <div className={styles.nameContainer}>
                         <h3>Daniel Pisati</h3>
