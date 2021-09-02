@@ -63,12 +63,17 @@ export default function ProjectPage({ project }) {
 
                             {project.tools.map(tool => {
                                 return (
-                                    <motion.div variants={fadeInUp} key={tool.name} className={styles.tool}>
+                                    <motion.div 
+                                        variants={fadeInUp} 
+                                        key={tool.name} 
+                                        className={styles.tool}
+                                    >
                                         <Image 
                                             src={tool.icon} 
                                             alt={tool.name} 
-                                            width={240}
-                                            height={240}
+                                            width={45}
+                                            height={45}
+                                            layout=""
                                             />
                                         <p>{tool.name}</p>
                                     </motion.div>

@@ -44,13 +44,16 @@ export default function About() {
                 animate={aboutPictureControl}
                 className={styles.imageContainer}
             >
-                <Image 
-                    src="/assets/images/fullBody.png" 
-                    alt="Daniel full body 3D character" 
-                    width={585}    
-                    height={793}
-                    layout='fill'
-                />
+                <div className={styles.aboutImgContainer}>
+                    <Image 
+                        src="/assets/images/fullBody.png" 
+                        alt="Daniel full body 3D character" 
+                        width={585}    
+                        height={793}
+                        layout='responsive'
+                    />
+                </div>
+
             </motion.div>
 
             <main>
@@ -66,47 +69,65 @@ export default function About() {
                 </motion.p>
 
                 <motion.div className={styles.contactsContainer}>
-                    <motion.a variants={fadeInUp} href="https://www.facebook.com/daniel.pisati" target="_blank" rel="noreferrer">
+                    <motion.a 
+                        variants={fadeInUp} 
+                        href="https://www.facebook.com/daniel.pisati" 
+                        target="_blank" 
+                        rel="noreferrer"
+                    >
                         <div className={`${styles.contact} ${styles.facebook}`}>
                             <Image 
                                 src="/assets/icons/facebook.svg" 
                                 alt="facebook" 
-                                width={240}    
-                                height={240}
-                                layout='fill'
-                                />
+                                width={35}    
+                                height={35}
+                                layout='intrinsic'
+                            />
                         </div>
                     </motion.a>
-                    <motion.a variants={fadeInUp} href="https://www.linkedin.com/in/daniel-pisati/" target="_blank" rel="noreferrer">
+                    <motion.a 
+                        variants={fadeInUp} 
+                        href="https://www.linkedin.com/in/daniel-pisati/" 
+                        target="_blank" 
+                        rel="noreferrer"
+                    >
                         <div className={`${styles.contact} ${styles.linkedin}`}>
                             <Image 
                                 src="/assets/icons/linkedin.svg" 
                                 alt="linkedin" 
-                                width={240}    
-                                height={240}
-                                layout='fill'
-                                />
-                        </div>
-                    </motion.a>
-                    <motion.a variants={fadeInUp} href="https://github.com/dpisati" target="_blank" rel="noreferrer">
-                        <div className={`${styles.contact} ${styles.github}`}>
-                            <Image 
-                            src="/assets/icons/github.svg" 
-                            alt="github" 
-                            width={240}    
-                                height={240}
-                                layout='fill'
+                                width={35}    
+                                height={35}
+                                layout='intrinsic'
                             />
                         </div>
                     </motion.a>
-                    <motion.a variants={fadeInUp} href="mailto:dpisati@gmail.com">
+                    <motion.a 
+                        variants={fadeInUp} 
+                        href="https://github.com/dpisati" 
+                        target="_blank" 
+                        rel="noreferrer"
+                    >
+                        <div className={`${styles.contact} ${styles.github}`}>
+                            <Image 
+                                src="/assets/icons/github.svg" 
+                                alt="github" 
+                                width={35}    
+                                height={35}
+                                layout='intrinsic'
+                            />
+                        </div>
+                    </motion.a>
+                    <motion.a 
+                        variants={fadeInUp} 
+                        href="mailto:dpisati@gmail.com"
+                    >
                         <div className={`${styles.contact} ${styles.email}`}>
                             <Image 
-                            src="/assets/icons/email.svg" 
-                            alt="email" 
-                            width={240}    
-                                height={240}
-                                layout='fill'
+                                src="/assets/icons/email.svg" 
+                                alt="email" 
+                                width={35}    
+                                height={35}
+                                layout='intrinsic'
                             />
                         </div>
                     </motion.a>

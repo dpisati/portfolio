@@ -19,6 +19,7 @@ export default function Hero() {
                         alt="" 
                         width={546}    
                         height={630}
+                        layout="responsive"
                         />
                 </div>
             </div>

@@ -11,23 +11,22 @@ export default function Header({isLandingPage}) {
                 
                 {isLandingPage ? (
                     <Link href="/">
+                        <div className={styles.logo} >
                         <Image 
-                            className={styles.logo} 
                             src="/logo.svg" 
                             alt="Logo" 
                             width={82}  
                             height={46}
+                            layout="responsive"
                         />
+                        </div>
                     </Link>
                 ) : (
                     <Link href="/#work">
                         <div className={styles.goBack}>
-                            <Image 
-                                src="/assets/icons/arrowBack.svg" 
-                                alt="Go Back" 
-                                width={82}  
-                                height={46}
-                                />
+                            <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.294922 6.70496L6.29492 12.705L7.70492 11.295L3.12492 6.70496L7.70492 2.11496L6.29492 0.704956L0.294922 6.70496Z" fill="#323232"/>
+                            </svg>
                         </div>
                     </Link>
                 )}

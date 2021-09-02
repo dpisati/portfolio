@@ -41,28 +41,27 @@ export default function ProjectCard({ project }) {
                 }}
             >
                 
-                    <motion.h2
-                    >
-                        {project.title}
-                    </motion.h2>
-                    <p>{project.slogan}</p>
+                <motion.h2>{project.title}</motion.h2>
+                <p>{project.slogan}</p>
                 
-                
-                <Image 
-                    src={project.img} 
-                    alt={project.title + ' preview'} 
-                    width={822}    
-                    height={504}
-                    // layout='fill'
-                    />
+                <div className={styles.projectImgPreview}>
+                    <Image 
+                        src={project.img} 
+                        alt={project.title + ' preview'} 
+                        width={260}    
+                        height={150}
+                        layout='responsive'
+                        />
+                </div>
+
 
                 <div className={styles.background}>
                     <Image 
                         src={project.img} 
                         alt="" 
-                        width={822}    
-                        height={504}
-                        // layout='fill'
+                        width={260}    
+                        height={150}
+                        layout='responsive'
                         />
                 </div>
             </motion.div>
