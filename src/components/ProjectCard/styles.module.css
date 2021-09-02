@@ -25,7 +25,9 @@
     z-index: 5;
 }
 
-.projectCardContainer > img {
+
+.projectImgPreview {
+    width: 100%;
     width: 260px;
     float: right;
     position: relative;
@@ -44,13 +46,10 @@
     position: absolute;
     z-index: 1;
     opacity: .04;
-}
-
-.background > img {
-    width: 120%;
     height: auto;
     transition: transform .3s;
 }
+
 
 .projectCardContainer:hover {
     box-shadow: 0 0 31px rgba(0, 0, 0, 0.2); 
@@ -58,8 +57,11 @@
 	-moz-box-shadow: 0 0 31px rgba(0, 0, 0, 0.2); 
 }
 
-.projectCardContainer:hover .background > img {
-    transform: scale(1.4);
+.projectCardContainer:hover .background {
+    transform: 
+        translate(-50%, -50%)
+        rotate(-10deg)
+        scale(1.4);
 }
 
 @media (max-width: 500px) {
@@ -74,4 +76,5 @@
     .projectCardContainer > p {
         margin-bottom: 10px;
     }
+   
 }

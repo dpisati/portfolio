@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 import styles from './styles.module.css'
 
@@ -9,7 +10,10 @@ export default function Footer({isLandingPage}) {
             <div className={styles.footerContainerInner}>
                 <section>
                     <Link href="/">
-                        <img src="/logo.svg" alt="DP Logo" />
+                        <img 
+                            src="/logo.svg" 
+                            alt="DP Logo" 
+                            />
                     </Link>
                     <div className={styles.nameContainer}>
                         <h3>Daniel Pisati</h3>
@@ -20,14 +24,14 @@ export default function Footer({isLandingPage}) {
                         </p> */}
                     </div>
                 </section>
-                <aside>
+                <div>
                     <Link href={isLandingPage ? "#work" : "/#work"}>
                         <a>Work</a>
                     </Link>
                     <a href="mailto:dpisati@gmail.com">
                         Contact
                     </a>
-                </aside>
+                </div>
             </div>
         </footer>
     )

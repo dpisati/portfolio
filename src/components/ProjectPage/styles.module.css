@@ -82,7 +82,7 @@
     margin-bottom: 5px;
 }
 
-.tool > img {
+.tool img {
     height: 45px;
     width: 45px;
 }
@@ -215,7 +215,7 @@
         margin-bottom: 15px;
     }
     
-    .tool > img {
+    .tool img {
         height: 35px;
         width: 35px;
     }
