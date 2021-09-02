@@ -25,8 +25,9 @@
     font-family: 'Oxanium', sans-serif;
 }
 
-.footerContainerInner > section > img {
+.footerLogoContainer {
     height: 35px;
+    width: 60px;
 }
 
 .nameContainer {
