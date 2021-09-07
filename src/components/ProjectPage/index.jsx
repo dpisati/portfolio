@@ -157,7 +157,7 @@ export default function ProjectPage({ project }) {
                         <hr />
                         <h4 className={styles.designPreview}>Design Preview</h4>
                         <div className={styles.iframeContainer}>
-                            <iframe frameBorder="0" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F4EO0OWcXHlK6HFy7nigNrt%2FMiXR-Design-Process" allowfullscreen></iframe>
+                            <iframe frameBorder="0" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F4EO0OWcXHlK6HFy7nigNrt%2FMiXR-Design-Process" allowFullScreen></iframe>
                         </div>
                     </div>
                 )}
