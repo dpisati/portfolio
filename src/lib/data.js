@@ -7,6 +7,13 @@ export const projects = [
         demo: 'https://mixr.tripod-digital.com/',
         slug: 'mixr',
         description: 'MiXR is a web application that simplifies the process of creating augmented reality in a quick and simple way. Just uploading the desirable content and choosing a few easy configurations, any user can create their own AR.',
+        design: {
+            title: 'UX / UI Design',
+            description: 'Create and adapt the user flow to make it as simple as possible. Transform a complex concept accessible to all kinds of users. Design the brand, logo and user interface to make it appealing and intuitive. Make the design real developing using React, Typescript, CSS modules, Stripe and Firebase.',
+            challenges: 'Make the augmented reality concept easy and intuitive to all users. At the start, the project didn\'t have the brand design definition or pictures as references. I was responsible for designing the logo and creating pictures to explain how augmented reality works and what each part of the experience personalization meant.',
+            solution: 'The form to upload the AR was a single page with a huge amount of inputs and setups. The first thing to make the experience less intimidating, I split the process into easy and quick steps and the personalization as optional and just showing if necessary at the right moment. In the end, the user was able to launch the AR online faster and easier.',
+            iframe: 'https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F4EO0OWcXHlK6HFy7nigNrt%2FUntitled%3Fnode-id%3D1%253A1574',     
+        },
         tools: [
             {
                 name: 'React',
@@ -37,7 +44,6 @@ export const projects = [
                 icon: '/assets/icons/whimsical.png'
             }
         ]
-
     },
     {
         title: 'Motorly',
@@ -47,6 +53,13 @@ export const projects = [
         demo: 'https://motorly.nz/',
         slug: 'motorly',
         description: 'Motorly is a mobile application that helps to find cars using their number plate or uploading a photo. It looks for offers on TradeMe and Facebook and gives the lowest, highest, and average prices. Also, a few useful information about the requested car like model, engine, year, etc.',
+        design: {
+            title: 'UI Design',
+            description: 'Re-design the landing page and develop the search function using the supplied API provided by the backend team.',
+            challenges: 'Re-design the landing page into a modern and appealing first impression using the supplied pictures and content. Define the other pages structure and user flow on the web.',
+            solution: 'To understand the client taste, I provided a few design references and designed some prototypes on Figma to get to the final look before development. Programmed the design to work on desktop and mobile using Next.js (React SSR), CSS Modules and Firebase Auth. ',
+            iframe: 'https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FevsnG3OIVbBkKs9I50GNM4%2FUntitled%3Fnode-id%3D1%253A3798',     
+        },
         tools: [
             {
                 name: 'React',

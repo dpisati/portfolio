@@ -137,8 +137,30 @@ export default function ProjectPage({ project }) {
                                 </motion.a>
                             )}
                         </motion.div>
+
                     </div>
                 </div>
+
+                {project.design && (
+                    <div className={styles.designProcessContainer}>
+                        <hr />                        
+                        <h3>{project.design.title}</h3>
+                        <h4>The role</h4>
+                        <p>{project.design.description}</p>                    
+                    
+                        <h4>Challenges</h4>
+                        <p>{project.design.challenges}</p>                    
+                    
+                        <h4>Solution</h4>
+                        <p>{project.design.solution}</p>                    
+
+                        <hr />
+                        <h4 className={styles.designPreview}>Design Preview</h4>
+                        <div className={styles.iframeContainer}>
+                            <iframe frameBorder="0" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F4EO0OWcXHlK6HFy7nigNrt%2FMiXR-Design-Process" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                )}
             </div>
         </main>
     )
