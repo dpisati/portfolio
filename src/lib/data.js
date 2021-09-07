@@ -58,7 +58,7 @@ export const projects = [
             description: 'Re-design the landing page and develop the search function using the supplied API provided by the backend team.',
             challenges: 'Re-design the landing page into a modern and appealing first impression using the supplied pictures and content. Define the other pages structure and user flow on the web.',
             solution: 'To understand the client taste, I provided a few design references and designed some prototypes on Figma to get to the final look before development. Programmed the design to work on desktop and mobile using Next.js (React SSR), CSS Modules and Firebase Auth. ',
-            iframe: 'https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FevsnG3OIVbBkKs9I50GNM4%2FUntitled%3Fnode-id%3D1%253A3798',     
+            iframe: 'https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FevsnG3OIVbBkKs9I50GNM4%2FMotory-Design-Process%3Fnode-id%3D0%253A1',     
         },
         tools: [
             {
