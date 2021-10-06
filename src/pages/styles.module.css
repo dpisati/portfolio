@@ -6,7 +6,16 @@
     gap: 40px;
 }
 
+.hero3dContainer {
+    width: 100%;
+    height: 90vh;
+    padding-top: 100px;
+}
 
+.hero3d {
+    width: 100%;
+    height: 100%;
+}
 
 @media (max-width: 500px) {
     .projectsContainer {

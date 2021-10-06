@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Head from 'next/head'
 import About from '../components/About';
 import Footer from '../components/Footer';
@@ -13,6 +13,7 @@ import { projects } from '../lib/data';
 import styles from './styles.module.css'
 
 export default function Home() {
+
   return (
     <motion.div 
       initial={{ opacity: 0 }}
@@ -53,7 +54,25 @@ export default function Home() {
       </Head>
 
       <Header isLandingPage={true}/>
-      <Hero />
+
+
+      {/* <div className={styles.hero3dContainer}>
+        <object 
+          className={styles.hero3d}
+          type="text/html" 
+          data="https://3dhead.vercel.app/">                
+        </object>
+      </div> */}
+
+
+<Hero />
+{/* 
+      {!display3D ? (
+      ) : (
+        )} */}
+        
+
+      {/* <button onClick={() => setDisplay3D(!display3D)}>3D</button> */}
 
       <span 
         id="work"
