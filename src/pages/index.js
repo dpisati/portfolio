@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import Head from 'next/head'
 import About from '../components/About';
 import Footer from '../components/Footer';
@@ -27,7 +26,7 @@ export default function Home() {
         <link rel="manifest" href="/site.webmanifest"/>
         <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"/>
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true"/>
         <link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet"/>
         <link rel="preload" as="image" href="/assets/images/hero.png" />
         <title>Daniel Pisati - Designer / Developer</title>
@@ -42,37 +41,18 @@ export default function Home() {
         <meta key="metaOGUrl" property="og:url" content="https://dpportfolio.vercel.app/" />
         <meta key="metaOGTitle" property="og:title" content="Daniel Pisati - Designer / Developer" />
         <meta key="metaOGDescription" property="og:description" content="Hi, I'm Daniel Pisati, a UX / UI Designer and frontend developer 🚀" />
-        {/* <meta key="metaOGImage" property='og:image' content="http://dpportfolio.vercel.app/shareImg.png"/> */}
         <meta key="metaOGImageHTTPS" property='og:image:secure_url' content="https://dpportfolio.vercel.app/shareImg.png"/>
                 
         <meta key="metaTwitterCard" property="twitter:card" content="summary_large_image"/>
         <meta key="metaTwitterUrl" property="twitter:url" content="https://dpportfolio.vercel.app/"/>
         <meta key="metaTwitterTitle" property="twitter:title" content="Daniel Pisati - Designer / Developer"/>
         <meta key="metaTwitterDescription" property="twitter:description" content="Hi, I'm Daniel Pisati, a UX / UI Designer and frontend developer 🚀" />
-        {/* <meta key="metaTwitterImage" property="twitter:image" content="http://dpportfolio.vercel.app/shareImg.png" /> */}
         <meta key="metaTwitterImageHTTPS" property="twitter:image:secure_url" content="https://dpportfolio.vercel.app/shareImg.png" />
       </Head>
 
       <Header isLandingPage={true}/>
 
-
-      {/* <div className={styles.hero3dContainer}>
-        <object 
-          className={styles.hero3d}
-          type="text/html" 
-          data="https://3dhead.vercel.app/">                
-        </object>
-      </div> */}
-
-
-<Hero />
-{/* 
-      {!display3D ? (
-      ) : (
-        )} */}
-        
-
-      {/* <button onClick={() => setDisplay3D(!display3D)}>3D</button> */}
+      <Hero />
 
       <span 
         id="work"

@@ -26,8 +26,7 @@ export default function ProjectCard({ project }) {
     }, [inView])
 
     return (
-        // <Link href={`/projects/${project.slug}`}>
-        <a target="_blank" href={`/projects/${project.slug}`}>
+        <Link href={`/projects/${project.slug}`}>
             <motion.div 
                 animate={animation}
                 className={styles.projectCardContainer}
@@ -66,7 +65,6 @@ export default function ProjectCard({ project }) {
                         />
                 </div>
             </motion.div>
-        </a>
-        // </Link>
+        </Link>
     )
 }
