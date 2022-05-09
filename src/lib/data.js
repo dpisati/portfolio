@@ -164,7 +164,7 @@ export const projects = [
     },
     {
         title: 'Ecollect',
-        slogan: 'Find teachers online',
+        slogan: 'Find recycling centres nearby',
         img: '/assets/images/ecollect.png',
         color: '#2eae69',
         github: 'https://github.com/dpisati/ecollect_app',
