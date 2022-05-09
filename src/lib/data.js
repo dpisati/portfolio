@@ -297,7 +297,7 @@ export const projects = [
     },
     {
         title: 'Movie App',
-        slogan: 'Get deatils from moveis',
+        slogan: 'Get details from movies',
         img: '/assets/images/movie.png',
         color: '#363636',
         github: 'https://github.com/dpisati/movie',
