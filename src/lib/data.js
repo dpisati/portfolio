@@ -360,7 +360,7 @@ export const projects = [
         github: 'https://github.com/dpisati/blockthon',
         demo: 'https://dpisati.github.io/blockthon/',
         slug: 'blockthon',
-        description: 'Blockthon is a quick and fun game made to study a bit of Unity and WebGL. The goal is to reach the final line without hitting any objects. Use the arrows to avoid the obstacles and run the race!',
+        description: 'Blockthon is a quick and fun game made to study a bit of Unity and WebGL. The goal is to reach the final line without hitting any objects. Use the keys A (left) and D (right) to avoid the obstacles and run the race!',
         tools: [
             {
                 name: 'Unity',
