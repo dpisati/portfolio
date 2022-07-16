@@ -107,7 +107,7 @@ export default function Home() {
                 />
                 <meta
                     property="og:image"
-                    content="https://dpportfolio.vercel.app/linkedin.png"
+                    content="https://dpportfolio.vercel.app/linkedin.jpg"
                 />
                 <meta
                     property="og:description"
