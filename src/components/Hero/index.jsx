@@ -1,6 +1,7 @@
 import React from 'react'
-import Image from 'next/image'
 import styles from './styles.module.css'
+import Hero3D from '../Hero3D';
+
 export default function Hero() {
     return (
         <div className={styles.heroContainer}>
@@ -13,14 +14,9 @@ export default function Hero() {
                         Frontend Developer 🚀
                     </p>
                 </div>
-                <div className={styles.heroImgContainer}>
-                    <Image 
-                        src="/assets/images/hero.png" 
-                        alt="" 
-                        width={546}    
-                        height={630}
-                        layout="responsive"
-                        />
+
+                <div className={styles.heroMain3dContainer}>
+                    <Hero3D  />
                 </div>
             </div>
         </div>
