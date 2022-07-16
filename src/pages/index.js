@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import Head from 'next/head';
 import About from '../components/About';
 import Footer from '../components/Footer';
@@ -100,6 +99,26 @@ export default function Home() {
                     property="og:image:secure_url"
                     content="https://dpportfolio.vercel.app/shareImg.png"
                 />
+
+                {/* LinkedIn Meta */}
+                <meta
+                    property="og:title"
+                    content="Daniel Pisati - Designer / Developer"
+                />
+                <meta
+                    property="og:image"
+                    content="https://dpportfolio.vercel.app/linkedin.png"
+                />
+                <meta
+                    property="og:description"
+                    content="Hi, I'm Daniel Pisati, a UX / UI Designer and frontend developer 🚀"
+                />
+                <meta
+                    property="og:url"
+                    content="https://dpportfolio.vercel.app/"
+                />
+
+                {/*  */}
 
                 <meta
                     key="metaTwitterCard"
