@@ -1,22 +1,23 @@
-import React from 'react'
-import Link from 'next/link'
-import Image from 'next/image'
+import React from 'react';
+import Link from 'next/link';
+import Image from 'next/image';
 
-import styles from './styles.module.css'
+import styles from './styles.module.css';
 
-export default function Footer({isLandingPage}) {
+export default function Footer({ isLandingPage }) {
     return (
         <footer className={styles.footerContainer}>
             <div className={styles.footerContainerInner}>
                 <section>
                     <Link href="/">
                         <div className={styles.footerLogoContainer}>
-                            <Image 
-                                src="/logo.svg" 
+                            <Image
+                                src="/logo.svg"
                                 alt="DP Logo"
-                                width={82}  
+                                width={82}
                                 height={46}
-                                layout="responsive" 
+                                layout="responsive"
+                                priority={true}
                             />
                         </div>
                     </Link>
@@ -30,14 +31,12 @@ export default function Footer({isLandingPage}) {
                     </div>
                 </section>
                 <div>
-                    <Link href={isLandingPage ? "#work" : "/#work"}>
+                    <Link href={isLandingPage ? '#work' : '/#work'}>
                         <a>Work</a>
                     </Link>
-                    <a href="mailto:dpisati@gmail.com">
-                        Contact
-                    </a>
+                    <a href="mailto:dpisati@gmail.com">Contact</a>
                 </div>
             </div>
         </footer>
-    )
+    );
 }
