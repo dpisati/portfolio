@@ -47,7 +47,7 @@ export default function Home() {
                 <link
                     rel="preconnect"
                     href="https://fonts.gstatic.com"
-                    crossOrigin
+                    crossOrigin=""
                 />
                 <link
                     href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap"
