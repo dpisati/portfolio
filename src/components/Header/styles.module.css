@@ -15,7 +15,7 @@
 }
 
 .smallNav {
-    height: 60px;
+    height: 70px;
 }
 
 .headerContainerInner {
@@ -99,7 +99,7 @@
     }
 
     .smallNav {
-        height: 60px;
+        height: 70px;
     }
 
     .logo {
@@ -109,12 +109,12 @@
 
 @media (max-width: 530px) {
     .linksContainer {
-        width: 250px;
+        width: 240px;
     }
 }
 
-@media (max-width: 400px) {
+/* @media (max-width: 400px) {
     .linksContainer {
-        width: 200px;
+        width: 240px;
     }
-}
+} */
