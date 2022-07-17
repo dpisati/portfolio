@@ -3,22 +3,36 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 import styles from './styles.module.css';
+import { useTheme } from 'next-themes';
 
 export default function Footer({ isLandingPage }) {
+    const { theme } = useTheme();
+
     return (
         <footer className={styles.footerContainer}>
             <div className={styles.footerContainerInner}>
                 <section>
                     <Link href="/">
                         <div className={styles.footerLogoContainer}>
-                            <Image
-                                src="/logo.svg"
-                                alt="DP Logo"
-                                width={82}
-                                height={46}
-                                layout="responsive"
-                                priority={true}
-                            />
+                            {theme === 'light' ? (
+                                <Image
+                                    src="/logo.svg"
+                                    alt="DP Logo"
+                                    width={82}
+                                    height={46}
+                                    layout="responsive"
+                                    priority={true}
+                                />
+                            ) : (
+                                <Image
+                                    src="/logoDark.svg"
+                                    alt="DP Logo"
+                                    width={82}
+                                    height={46}
+                                    layout="responsive"
+                                    priority={true}
+                                />
+                            )}
                         </div>
                     </Link>
                     <div className={styles.nameContainer}>

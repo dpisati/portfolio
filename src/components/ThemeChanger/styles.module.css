@@ -1,0 +1,7 @@
+.themeButton {
+    border: none;
+    width: 1.5rem;
+    height: 1.8rem;
+    cursor: pointer;
+    background-color: transparent;
+}

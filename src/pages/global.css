@@ -1,5 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200;400;700&family=Poppins:wght@300&family=Montserrat:wght@300;400;700&&family=Work+Sans:wght@700&display=swap');
 
+:root {
+    --background-primary: #ffffff;
+    --background-secondary: #faf9f9;
+
+    --contrast: #131313;
+
+    --text-primary: #3b3b3b;
+    --text-secondary: #1d1d1d;
+}
+
+[data-theme='dark'] {
+    --background-primary: #1d1d1d;
+    --background-secondary: #242323;
+
+    --contrast: #e4e4e4;
+
+    --text-primary: #f3f3f3;
+    --text-secondary: #e4e4e4;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -8,6 +28,7 @@
 
 html {
     scroll-behavior: smooth;
+    background-color: var(--background-primary);
 }
 
 a {
@@ -25,7 +46,6 @@ body {
         padding: 0 40px;
     }
 }
-
 
 @media (max-width: 665px) {
     body {

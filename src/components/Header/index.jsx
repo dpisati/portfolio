@@ -2,9 +2,12 @@ import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from './styles.module.css';
+import { ThemeChanger } from '../ThemeChanger';
+import { useTheme } from 'next-themes';
 
 export default function Header({ isLandingPage }) {
     const [isSmallNav, setIsSmallNav] = useState(false);
+    const { theme } = useTheme();
 
     useEffect(() => {
         const changeNavBackground = () => {
@@ -33,14 +36,25 @@ export default function Header({ isLandingPage }) {
                 {isLandingPage ? (
                     <Link href="/">
                         <div className={styles.logo}>
-                            <Image
-                                src="/logo.svg"
-                                alt="Logo"
-                                width={82}
-                                height={46}
-                                layout="responsive"
-                                priority={true}
-                            />
+                            {theme === 'light' ? (
+                                <Image
+                                    src="/logo.svg"
+                                    alt="Logo"
+                                    width={82}
+                                    height={46}
+                                    layout="responsive"
+                                    priority={true}
+                                />
+                            ) : (
+                                <Image
+                                    src="/logoDark.svg"
+                                    alt="Logo"
+                                    width={82}
+                                    height={46}
+                                    layout="responsive"
+                                    priority={true}
+                                />
+                            )}
                         </div>
                     </Link>
                 ) : (
@@ -55,7 +69,9 @@ export default function Header({ isLandingPage }) {
                             >
                                 <path
                                     d="M0.294922 6.70496L6.29492 12.705L7.70492 11.295L3.12492 6.70496L7.70492 2.11496L6.29492 0.704956L0.294922 6.70496Z"
-                                    fill="#323232"
+                                    fill={`${
+                                        theme === 'light' ? '#323232' : '#fff'
+                                    }`}
                                 />
                             </svg>
                         </div>
@@ -72,6 +88,7 @@ export default function Header({ isLandingPage }) {
                     <a className={styles.link} href="mailto:dpisati@gmail.com">
                         Contact
                     </a>
+                    <ThemeChanger />
                 </div>
             </div>
         </header>
