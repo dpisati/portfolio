@@ -5,7 +5,7 @@ import { ThemeProvider } from 'next-themes';
 function MyApp({ Component, pageProps }) {
     return (
         <AnimatePresence exitBeforeEnter={true}>
-            <ThemeProvider defaultTheme="light" enableSystem={false}>
+            <ThemeProvider defaultTheme="system" enableSystem={true}>
                 <Component {...pageProps} />
             </ThemeProvider>
         </AnimatePresence>
