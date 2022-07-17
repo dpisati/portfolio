@@ -120,7 +120,7 @@ export default function ProjectPage({ project }) {
                                     rel="noreferrer"
                                     style={{ background: project.color }}
                                 >
-                                    Demo
+                                    Visit
                                 </motion.a>
                             )}
                             {project.github && (
