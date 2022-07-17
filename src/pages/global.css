@@ -6,6 +6,8 @@
 
     --contrast: #131313;
 
+    --animated-cubes: #eceaea;
+
     --text-primary: #3b3b3b;
     --text-secondary: #1d1d1d;
 }
@@ -15,6 +17,8 @@
     --background-secondary: #242323;
 
     --contrast: #e4e4e4;
+
+    --animated-cubes: #272527;
 
     --text-primary: #f3f3f3;
     --text-secondary: #e4e4e4;

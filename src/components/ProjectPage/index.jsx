@@ -18,11 +18,11 @@ export default function ProjectPage({ project }) {
                 className={styles.projectContent}
                 style={{ border: ` 1px solid ${project.color}` }}
             >
-                <spam
+                <span
                     style={{
                         background: project.color,
                     }}
-                ></spam>
+                ></span>
                 <header>
                     <motion.div
                         initial="initial"
