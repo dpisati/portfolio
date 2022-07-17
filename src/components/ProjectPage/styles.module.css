@@ -17,6 +17,18 @@
     overflow: hidden;
 }
 
+.visit,
+.github {
+    transition: filter 0.2s;
+}
+
+.visit:hover {
+    filter: brightness(0.8);
+}
+.github:hover {
+    filter: contrast(120%);
+}
+
 .projectContent > spam {
     position: absolute;
     top: 0;

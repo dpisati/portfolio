@@ -1,0 +1,16 @@
+.logo {
+    height: 40px;
+    width: 60px;
+    transition: all 0.2s;
+}
+
+.smallNav .logo {
+    height: 30px;
+    width: 50px;
+}
+
+@media (max-width: 665px) {
+    .logo {
+        height: 30px;
+    }
+}

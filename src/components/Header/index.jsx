@@ -1,13 +1,29 @@
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import styles from './styles.module.css';
 import { ThemeChanger } from '../ThemeChanger';
 import { useTheme } from 'next-themes';
+import Logo from '../Logo';
 
 export default function Header({ isLandingPage }) {
     const [isSmallNav, setIsSmallNav] = useState(false);
-    const { theme } = useTheme();
+    const [mounted, setMounted] = useState(false);
+    const { theme, resolvedTheme } = useTheme();
+
+    let src;
+
+    switch (resolvedTheme) {
+        case 'light':
+            src = '/logo.svg';
+            break;
+        case 'dark':
+            src = '/logoDark.svg';
+            break;
+        default:
+            src =
+                'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';
+            break;
+    }
 
     useEffect(() => {
         const changeNavBackground = () => {
@@ -24,6 +40,10 @@ export default function Header({ isLandingPage }) {
         };
     }, []);
 
+    useEffect(() => setMounted(true), []);
+
+    if (!mounted) return null;
+
     return (
         <header
             className={`
@@ -33,39 +53,7 @@ export default function Header({ isLandingPage }) {
         >
             <div className={styles.headerContainerInner}>
                 {isLandingPage ? (
-                    <Link href="/">
-                        <div className={styles.logo}>
-                            {!theme && (
-                                <Image
-                                    src="/logo.svg"
-                                    alt="Logo"
-                                    width={82}
-                                    height={46}
-                                    layout="responsive"
-                                    priority={true}
-                                />
-                            )}
-                            {theme === 'light' ? (
-                                <Image
-                                    src="/logo.svg"
-                                    alt="Logo"
-                                    width={82}
-                                    height={46}
-                                    layout="responsive"
-                                    priority={true}
-                                />
-                            ) : (
-                                <Image
-                                    src="/logoDark.svg"
-                                    alt="Logo"
-                                    width={82}
-                                    height={46}
-                                    layout="responsive"
-                                    priority={true}
-                                />
-                            )}
-                        </div>
-                    </Link>
+                    <Logo />
                 ) : (
                     <Link href="/#work">
                         <div className={styles.goBack}>

@@ -4,11 +4,11 @@ import { ThemeProvider } from 'next-themes';
 
 function MyApp({ Component, pageProps }) {
     return (
-        <AnimatePresence exitBeforeEnter={true}>
-            <ThemeProvider defaultTheme="light" enableSystem={false}>
+        <ThemeProvider>
+            <AnimatePresence exitBeforeEnter={true}>
                 <Component {...pageProps} />
-            </ThemeProvider>
-        </AnimatePresence>
+            </AnimatePresence>
+        </ThemeProvider>
     );
 }
 

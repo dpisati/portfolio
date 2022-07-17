@@ -29,17 +29,6 @@
     font-weight: bold;
 }
 
-.logo {
-    height: 40px;
-    width: 60px;
-    transition: all 0.2s;
-}
-
-.smallNav .logo {
-    height: 30px;
-    width: 50px;
-}
-
 .linksContainer {
     width: 400px;
     display: flex;
@@ -100,10 +89,6 @@
 
     .smallNav {
         height: 70px;
-    }
-
-    .logo {
-        height: 30px;
     }
 }
 

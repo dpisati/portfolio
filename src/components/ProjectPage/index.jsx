@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './styles.module.css';
 import { motion } from 'framer-motion';
 import { fadeInUp, container, fadeInRight } from '../../utils/animations.js';
 import Image from 'next/image';
 export default function ProjectPage({ project }) {
+    const [showFigma, setShowFigma] = useState(false);
+
+    useEffect(() => {
+        setTimeout(() => {
+            setShowFigma(true);
+        }, 1000);
+    }, []);
+
     return (
         <main className={styles.projectContainer}>
             <div
@@ -118,6 +126,7 @@ export default function ProjectPage({ project }) {
                                     href={project.demo}
                                     target="_blank"
                                     rel="noreferrer"
+                                    className={styles.visit}
                                     style={{ background: project.color }}
                                 >
                                     Visit
@@ -129,6 +138,7 @@ export default function ProjectPage({ project }) {
                                     variants={fadeInUp}
                                     animate="animate"
                                     href={project.github}
+                                    className={styles.github}
                                     target="_blank"
                                     rel="noreferrer"
                                 >
@@ -155,11 +165,14 @@ export default function ProjectPage({ project }) {
                         <hr />
                         <h4 className={styles.designPreview}>Design Preview</h4>
                         <div className={styles.iframeContainer}>
-                            <iframe
-                                frameBorder="0"
-                                src={project.design.iframe}
-                                allowFullScreen
-                            ></iframe>
+                            {showFigma && (
+                                <iframe
+                                    scrolling="no"
+                                    frameBorder="0"
+                                    src={project.design.iframe}
+                                    allowFullScreen
+                                ></iframe>
+                            )}
                         </div>
                     </div>
                 )}
