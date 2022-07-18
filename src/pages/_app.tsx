@@ -2,8 +2,9 @@ import './global.css';
 import { AnimatePresence } from 'framer-motion';
 import { ThemeProvider } from 'next-themes';
 import AnimatedBackground from '../components/AnimatedBackground';
+import { AppProps } from 'next/app';
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }: AppProps) {
     return (
         <ThemeProvider>
             <AnimatePresence exitBeforeEnter={true}>

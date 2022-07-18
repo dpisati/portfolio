@@ -8,22 +8,7 @@ import Logo from '../Logo';
 export default function Header({ isLandingPage }) {
     const [isSmallNav, setIsSmallNav] = useState(false);
     const [mounted, setMounted] = useState(false);
-    const { theme, resolvedTheme } = useTheme();
-
-    let src;
-
-    switch (resolvedTheme) {
-        case 'light':
-            src = '/logo.svg';
-            break;
-        case 'dark':
-            src = '/logoDark.svg';
-            break;
-        default:
-            src =
-                'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7';
-            break;
-    }
+    const { theme } = useTheme();
 
     useEffect(() => {
         const changeNavBackground = () => {

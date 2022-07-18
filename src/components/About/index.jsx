@@ -23,7 +23,7 @@ export default function About() {
             containerAnimation.start('initial');
             aboutPictureControl.start('initial');
         }
-    }, [inView]);
+    }, [inView, aboutPictureControl, containerAnimation]);
 
     return (
         <motion.div

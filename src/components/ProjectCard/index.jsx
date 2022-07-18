@@ -23,7 +23,7 @@ export default function ProjectCard({ project }) {
                 y: 30,
             });
         }
-    }, [inView]);
+    }, [inView, animation]);
 
     return (
         <Link href={`/projects/${project.slug}`}>

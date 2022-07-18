@@ -8,7 +8,29 @@ import { projects } from '../../lib/data';
 
 import ProjectPage from '../../components/ProjectPage';
 
-export default function Project(project) {
+export interface IProject {
+    title: string;
+    slogan: string;
+    img: string;
+    color: string;
+    demo: string;
+    slug: string;
+    github: string;
+    description: string;
+    design?: {
+        title: string;
+        description: string;
+        challenges: string;
+        solution: string;
+        iframe: string;
+    };
+    tools: {
+        name: string;
+        icon: string;
+    }[];
+}
+
+export default function Project(project: IProject) {
     return (
         <motion.div
             initial={{ opacity: 0 }}
