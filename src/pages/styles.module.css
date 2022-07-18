@@ -6,10 +6,23 @@
     gap: 40px;
 }
 
-
+.projectsTitle {
+    font-family: 'Lalezar', sans-serif;
+    font-weight: normal;
+    font-size: 4rem;
+    display: block;
+    text-align: center;
+    margin-top: 2rem;
+    color: var(--text-primary);
+}
 
 @media (max-width: 500px) {
     .projectsContainer {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .projectsTitle {
+        font-size: 3rem;
+        margin-top: 1rem;
     }
 }

@@ -151,8 +151,9 @@ export default function Home() {
             <Header isLandingPage={true} />
             <Hero />
 
-            <span id="work" style={{ position: 'relative', top: -110 }}></span>
+            <span id="work" style={{ position: 'relative', top: -80 }}></span>
 
+            <h2 className={styles.projectsTitle}>Projects</h2>
             <div className={styles.projectsContainer}>
                 {projects.map((project) => {
                     return <ProjectCard key={project.slug} project={project} />;
