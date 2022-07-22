@@ -8,7 +8,7 @@ import styles from './styles.module.css';
 export default function Logo() {
     const { resolvedTheme } = useTheme();
 
-    let src;
+    let src: string;
 
     switch (resolvedTheme) {
         case 'light':
@@ -24,7 +24,7 @@ export default function Logo() {
     }
 
     return (
-        <Link href="/">
+        <Link href="/" passHref>
             <div className={styles.logo}>
                 <Image
                     src={src}

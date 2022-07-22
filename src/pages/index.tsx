@@ -42,16 +42,7 @@ export default function Home() {
                     href="/safari-pinned-tab.svg"
                     color="#5bbad5"
                 />
-                <link rel="preconnect" href="https://fonts.googleapis.com" />
-                <link
-                    rel="preconnect"
-                    href="https://fonts.gstatic.com"
-                    crossOrigin=""
-                />
-                <link
-                    href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap"
-                    rel="stylesheet"
-                />
+
                 <link rel="preload" as="image" href="/assets/images/hero.png" />
                 <title>Daniel Pisati - Designer / Developer</title>
 
@@ -93,14 +84,13 @@ export default function Home() {
                     property="og:description"
                     content="Hi, I'm Daniel Pisati, a UX / UI Designer and frontend developer 🚀"
                 />
-                {/* <meta key="metaOGImage" property='og:image' content="http://dpportfolio.vercel.app/shareImg.png"/> */}
+
                 <meta
                     key="metaOGImageHTTPS"
                     property="og:image:secure_url"
                     content="https://dpportfolio.vercel.app/shareImg.png"
                 />
 
-                {/* LinkedIn Meta */}
                 <meta
                     property="og:title"
                     content="Daniel Pisati - Designer / Developer"
@@ -117,8 +107,6 @@ export default function Home() {
                     property="og:url"
                     content="https://dpportfolio.vercel.app/"
                 />
-
-                {/*  */}
 
                 <meta
                     key="metaTwitterCard"
@@ -140,7 +128,7 @@ export default function Home() {
                     property="twitter:description"
                     content="Hi, I'm Daniel Pisati, a UX / UI Designer and frontend developer 🚀"
                 />
-                {/* <meta key="metaTwitterImage" property="twitter:image" content="http://dpportfolio.vercel.app/shareImg.png" /> */}
+
                 <meta
                     key="metaTwitterImageHTTPS"
                     property="twitter:image:secure_url"

@@ -3,7 +3,9 @@ import styles from './styles.module.css';
 import { motion } from 'framer-motion';
 import { fadeInUp, container, fadeInRight } from '../../utils/animations.js';
 import Image from 'next/image';
-export default function ProjectPage({ project }) {
+import { IProject } from '../../pages/projects/[slug]';
+
+export default function ProjectPage({ project }: { project: IProject }) {
     const [showFigma, setShowFigma] = useState(false);
 
     useEffect(() => {
@@ -78,7 +80,7 @@ export default function ProjectPage({ project }) {
                                             width={45}
                                             height={45}
                                             priority={true}
-                                            layout=""
+                                            layout="responsive"
                                         />
                                         <p>{tool.name}</p>
                                     </motion.div>

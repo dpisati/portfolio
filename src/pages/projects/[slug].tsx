@@ -7,8 +7,31 @@ import { motion } from 'framer-motion';
 import { projects } from '../../lib/data';
 
 import ProjectPage from '../../components/ProjectPage';
+import { GetStaticPaths, GetStaticProps } from 'next';
 
-export default function Project(project) {
+export interface IProject {
+    title: string;
+    slogan: string;
+    img: string;
+    color: string;
+    slug: string;
+    description: string;
+    tools: {
+        name: string;
+        icon: string;
+    }[];
+    demo?: string;
+    github?: string;
+    design?: {
+        title: string;
+        description: string;
+        challenges: string;
+        solution: string;
+        iframe: string;
+    };
+}
+
+export default function Project(project: IProject) {
     return (
         <motion.div
             initial={{ opacity: 0 }}
@@ -35,16 +58,16 @@ export default function Project(project) {
     );
 }
 
-export async function getStaticProps(context) {
+export const getStaticProps: GetStaticProps = async (context) => {
     const { params } = context;
     const props = projects.find((item) => item.slug === params.slug);
 
     return {
         props,
     };
-}
+};
 
-export async function getStaticPaths() {
+export const getStaticPaths: GetStaticPaths = async () => {
     const paths = projects.map((project) => ({
         params: {
             slug: project.slug,
@@ -55,4 +78,4 @@ export async function getStaticPaths() {
         paths,
         fallback: false,
     };
-}
+};

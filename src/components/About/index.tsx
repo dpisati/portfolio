@@ -23,7 +23,7 @@ export default function About() {
             containerAnimation.start('initial');
             aboutPictureControl.start('initial');
         }
-    }, [inView]);
+    }, [inView, aboutPictureControl, containerAnimation]);
 
     return (
         <motion.div
@@ -55,9 +55,9 @@ export default function About() {
             <main>
                 <motion.h2 variants={fadeInUp}>About</motion.h2>
                 <motion.p variants={fadeInUp}>
-                    I’m <strong>Daniel Pisati</strong>, an designer / developer
-                    based in Christchurch, New Zealand 🌏. My passions are User
-                    Interface, 3D illustration, animation and frontend
+                    I’m <strong>Daniel Pisati</strong>, an designer and
+                    developer based in Christchurch, New Zealand 🌏. My passions
+                    are User Interface, 3D illustration, animation and frontend
                     development. I’ve had the opportunity to combine my{' '}
                     <strong>design</strong> expertise with{' '}
                     <strong>web development</strong>, 🚀 merging these two

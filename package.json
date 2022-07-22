@@ -1,23 +1,29 @@
 {
-  "name": "portfolio",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "framer-motion": "^4.1.17",
-    "next": "11.1.0",
-    "next-themes": "^0.2.0",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "react-intersection-observer": "^8.32.0"
-  },
-  "devDependencies": {
-    "eslint": "7.32.0",
-    "eslint-config-next": "11.1.0"
-  }
+    "name": "portfolio",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint"
+    },
+    "dependencies": {
+        "framer-motion": "^6.5.1",
+        "next": "^12.2.2",
+        "next-themes": "^0.2.0",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-intersection-observer": "^8.32.0",
+        "typescript": "^4.7.4"
+    },
+    "devDependencies": {
+        "@types/jest": "^28.1.6",
+        "@types/next": "^9.0.0",
+        "@types/node": "^18.0.6",
+        "@types/react": "^18.0.15",
+        "@types/react-dom": "^18.0.6",
+        "eslint": "7.32.0",
+        "eslint-config-next": "11.1.0"
+    }
 }
