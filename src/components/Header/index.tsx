@@ -5,7 +5,11 @@ import { ThemeChanger } from '../ThemeChanger';
 import { useTheme } from 'next-themes';
 import Logo from '../Logo';
 
-export default function Header({ isLandingPage }) {
+interface HeaderProps {
+    isLandingPage: boolean;
+}
+
+export default function Header({ isLandingPage }: HeaderProps) {
     const [isSmallNav, setIsSmallNav] = useState(false);
     const [mounted, setMounted] = useState(false);
     const { theme } = useTheme();
@@ -40,7 +44,7 @@ export default function Header({ isLandingPage }) {
                 {isLandingPage ? (
                     <Logo />
                 ) : (
-                    <Link href="/#work">
+                    <Link href="/#work" passHref>
                         <div className={styles.goBack}>
                             <svg
                                 width="8"

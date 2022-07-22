@@ -19,7 +19,7 @@ export default function Footer({ isLandingPage }: FooterProps) {
         <footer className={styles.footerContainer}>
             <div className={styles.footerContainerInner}>
                 <section>
-                    <Link href="/">
+                    <Link href="/" passHref>
                         <div className={styles.footerLogoContainer}>
                             <Logo />
                         </div>

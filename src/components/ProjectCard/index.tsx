@@ -1,13 +1,14 @@
-import Link from 'next/link';
 import React, { useEffect } from 'react';
+import Link from 'next/link';
 import Image from 'next/image';
 
-import { useInView } from 'react-intersection-observer';
 import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+import { IProject } from '../../pages/projects/[slug]';
 
 import styles from './styles.module.css';
 
-export default function ProjectCard({ project }) {
+export default function ProjectCard({ project }: { project: IProject }) {
     const { ref, inView } = useInView({ threshold: 0.2 });
     const animation = useAnimation();
 
@@ -26,7 +27,7 @@ export default function ProjectCard({ project }) {
     }, [inView, animation]);
 
     return (
-        <Link href={`/projects/${project.slug}`}>
+        <Link href={`/projects/${project.slug}`} passHref>
             <motion.div
                 animate={animation}
                 className={styles.projectCardContainer}
