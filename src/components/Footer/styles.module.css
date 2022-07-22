@@ -52,6 +52,15 @@
     font-weight: bold;
 }
 
+.link {
+    color: var(--text-primary);
+    transition: all 0.2s;
+}
+
+.link:hover {
+    color: #008fbb;
+}
+
 @media (max-width: 1044px) {
     .footerContainerInner {
         padding: 0 40px;

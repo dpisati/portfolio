@@ -46,9 +46,11 @@ export default function Footer({ isLandingPage }) {
                 </section>
                 <div>
                     <Link href={isLandingPage ? '#work' : '/#work'}>
-                        <a>Work</a>
+                        <a className={styles.link}>Work</a>
                     </Link>
-                    <a href="mailto:dpisati@gmail.com">Contact</a>
+                    <a className={styles.link} href="mailto:dpisati@gmail.com">
+                        Contact
+                    </a>
                 </div>
             </div>
         </footer>
