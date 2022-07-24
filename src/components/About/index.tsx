@@ -75,9 +75,9 @@ export default function About() {
                             <Image
                                 src="/assets/icons/facebook.svg"
                                 alt="facebook"
-                                width={35}
-                                height={35}
-                                layout="intrinsic"
+                                width={22}
+                                height={22}
+                                layout="responsive"
                                 priority={true}
                             />
                         </div>
@@ -92,9 +92,9 @@ export default function About() {
                             <Image
                                 src="/assets/icons/linkedin.svg"
                                 alt="linkedin"
-                                width={35}
-                                height={35}
-                                layout="intrinsic"
+                                width={22}
+                                height={22}
+                                layout="responsive"
                                 priority={true}
                             />
                         </div>
@@ -109,9 +109,9 @@ export default function About() {
                             <Image
                                 src="/assets/icons/github.svg"
                                 alt="github"
-                                width={35}
-                                height={35}
-                                layout="intrinsic"
+                                width={22}
+                                height={22}
+                                layout="responsive"
                                 priority={true}
                             />
                         </div>
@@ -124,9 +124,9 @@ export default function About() {
                             <Image
                                 src="/assets/icons/email.svg"
                                 alt="email"
-                                width={35}
-                                height={35}
-                                layout="intrinsic"
+                                width={22}
+                                height={22}
+                                layout="responsive"
                                 priority={true}
                             />
                         </div>
