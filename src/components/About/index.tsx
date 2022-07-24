@@ -5,7 +5,7 @@ import { motion, useAnimation } from 'framer-motion';
 import Image from 'next/image';
 import styles from './styles.module.css';
 
-import { container, fadeInRight, fadeInUp } from '../../utils/animations.js';
+import { container, fadeInRight, fadeInUp } from '../../utils/animations';
 
 export default function About() {
     const { ref, inView } = useInView({ threshold: 0.7 });
@@ -55,13 +55,14 @@ export default function About() {
             <main>
                 <motion.h2 variants={fadeInUp}>About</motion.h2>
                 <motion.p variants={fadeInUp}>
-                    I’m <strong>Daniel Pisati</strong>, an designer and
-                    developer based in Christchurch, New Zealand 🌏. My passions
-                    are User Interface, 3D illustration, animation and frontend
-                    development. I’ve had the opportunity to combine my{' '}
-                    <strong>design</strong> expertise with{' '}
-                    <strong>web development</strong>, 🚀 merging these two
-                    amazing worlds to solve peoples problems.
+                    I’m <strong>Daniel Pisati</strong>, designer and developer
+                    based in Christchurch, New Zealand 🌏. My passions are User
+                    Interface, 3D illustration, animation and frontend
+                    development. Passionate about developing products that
+                    impact people, with the user experience as key to create
+                    intuitive and beautiful interfaces. Always open to sharing
+                    and learning new things... Keen to have a chat? Hit me up on
+                    the social media 😉
                 </motion.p>
 
                 <motion.div className={styles.contactsContainer}>
