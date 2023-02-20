@@ -97,6 +97,10 @@
     .linksContainer {
         width: 240px;
     }
+    
+    .headerContainerInner {
+        padding: 0 20px;
+    }
 }
 
 /* @media (max-width: 400px) {
