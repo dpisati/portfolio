@@ -1,7 +1,7 @@
 .heroContainer {
     width: 100%;
     padding-top: calc(110px + 40px);
-    height: calc(100vh - 110px + 80px);
+    height: calc(100svh - 110px + 80px);
     /* max-height: 70vh; */
     /* padding: 40px; */
 }
@@ -48,7 +48,7 @@
 .heroImgContainer > img {
     width: auto;
     height: 100%;
-    max-height: 70vh;
+    max-height: 70svh;
 }
 
 @media (max-width: 1044px) {
@@ -62,7 +62,7 @@
     }
 
     .heroImgContainer > img {
-        max-width: 50vh;
+        max-width: 50svh;
     }
 }
 
@@ -77,7 +77,7 @@
     }
 
     .heroImgContainer > img {
-        max-width: 40vh;
+        max-width: 40svh;
     }
 }
 
@@ -111,7 +111,7 @@
 @media (max-width: 665px) {
     .heroContainer {
         padding-top: calc(80px + 20px);
-        height: calc(100vh - 80px + 80px);
+        height: calc(100svh - 80px + 80px);
         padding-bottom: 20px;
     }
 }
