@@ -133,7 +133,7 @@ export default function Home() {
       <Timeline />
 
       <span id="work" style={{ position: "relative", top: 0 }}></span>
-      <h2 className={styles.projectsTitle}>Freelance Projects</h2>
+      <h2 className={styles.projectsTitle}>Freelance Jobs</h2>
       <div className={styles.projectsContainer}>
         {freelancing.map((project) => {
           return <ProjectCard key={project.slug} project={project} />;
