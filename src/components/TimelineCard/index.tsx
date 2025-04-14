@@ -1,4 +1,6 @@
-import React from "react";
+import { motion, useAnimation } from "framer-motion";
+import React, { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 import styles from "./styles.module.css";
 
 import { careerHistory, tools as dataTools } from "../../lib/data";
@@ -22,8 +24,30 @@ const TimelineCard: React.FC<TimelineCardProps> = ({
 }) => {
   const details = careerHistory.find((item) => item.company === company);
 
+  const { ref, inView } = useInView({ threshold: 0.2 });
+  const animation = useAnimation();
+
+  useEffect(() => {
+    if (inView) {
+      animation.start({
+        opacity: 1,
+        x: 0,
+      });
+    } else {
+      animation.start({
+        opacity: 0,
+        x: left ? -50 : 50,
+      });
+    }
+  }, [inView, animation, left]);
+
   return (
-    <div className={styles.timelineCard}>
+    <motion.div
+      className={styles.timelineCard}
+      ref={ref}
+      animate={animation}
+      transition={{ duration: 0.5, ease: "easeInOut" }}
+    >
       <h3 className={styles.company}>
         <a href={details.url} target="_blank" rel="noreferrer">
           {company}
@@ -61,7 +85,7 @@ const TimelineCard: React.FC<TimelineCardProps> = ({
           );
         })}
       </ul>
-    </div>
+    </motion.div>
   );
 };
 

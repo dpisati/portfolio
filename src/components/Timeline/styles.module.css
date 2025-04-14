@@ -9,11 +9,12 @@
   background-color: transparent;
   border-radius: 8px;
   
-  margin: 2rem 0;
+  overflow: visible;
 
   @media (max-width: 768px) {    
-    padding: 0px;
+    padding: 0;
   }
+
   
   
 }
@@ -89,7 +90,7 @@
   background-color: var(--background-secondary);
   padding: 1rem;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
 }
 
 .timelineYear {
