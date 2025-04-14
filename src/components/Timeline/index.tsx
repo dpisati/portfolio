@@ -8,14 +8,16 @@ import styles from "./styles.module.css";
 const Timeline = () => {
   const refs = useRef([]);
 
-  const inViewStates = careerHistory.map((_, index) => {
+  const inViewStates = [];
+  const inViewRefs = careerHistory.map(() => {
     const { ref, inView } = useInView({
       threshold: 0.1,
       triggerOnce: true,
     });
-    refs.current[index] = ref;
-    return inView;
+    inViewStates.push(inView);
+    return ref;
   });
+  refs.current = inViewRefs;
 
   const [isMobile, setIsMobile] = useState(false);
 
@@ -78,19 +80,6 @@ const Timeline = () => {
               left={index % 2 === 0}
             />
             <div
-              className={styles.timelineDot}
-              style={{
-                top: "40px",
-                left: index % 2 === 0 ? "auto" : 0,
-                right: index % 2 === 0 ? 0 : "auto",
-                transform:
-                  index % 2 !== 0 ? "translateX(-50%)" : "translateX(50%)",
-              }}
-            />
-          </motion.div>
-        ))}
-      </div>
-    </div>
   );
 };
 
