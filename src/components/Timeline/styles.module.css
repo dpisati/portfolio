@@ -1,0 +1,156 @@
+.timelineContainer {
+  position: relative;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  background-color: transparent;
+  border-radius: 8px;
+  
+  margin: 2rem 0;
+
+  @media (max-width: 768px) {    
+    padding: 0px;
+  }
+  
+  
+}
+
+.timelineTitle {
+  font-family: 'Lalezar', sans-serif;
+  font-weight: normal;
+  font-size: 4rem;
+  display: block;
+  text-align: center;
+  margin: 2rem 0;
+  color: var(--text-primary);
+
+  @media (max-width: 768px) {    
+    
+    line-height: 100%;
+    font-size: 3rem;
+  }
+}
+
+.timelineList {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  
+  @media (max-width: 768px) {    
+    display: flex;
+    gap: 2rem;
+  }
+}
+
+.timelineLine {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #ccc;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.timelineItem {
+  position: relative;
+  width: 50%;
+  margin: 20px 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+
+ 
+}
+
+.timelineItem.left {
+  left: 0;
+  text-align: right;
+  padding-right: 20px;
+}
+
+.timelineItem.right {
+  left: 50%;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.timelineContent {
+  background-color: var(--background-secondary);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.timelineYear {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--contrast);
+  margin-bottom: 0.5rem;
+}
+
+.timelineCompany {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.timelineDescription {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.timelineTools {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.timelineTools li {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.3rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+
+.timelineDot {
+  position: absolute;
+  
+  width: 16px;
+  height: 16px;
+  background-color: var(--background-primary);
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  
+  z-index: 3;
+}
+
+.placeholderImage {
+  position: absolute;
+  top: 0;
+  transform: translateY(-50%);
+  width: 100px;
+  height: 100px;
+  background-color: var(--background-secondary);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+

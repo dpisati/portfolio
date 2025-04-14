@@ -4,10 +4,11 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import ProjectCard from "../components/ProjectCard";
+import Timeline from "../components/Timeline";
 
 import { motion } from "framer-motion";
 
-import { projects } from "../lib/data";
+import { freelancing, projects } from "../lib/data";
 
 import styles from "../styles/styles.module.css";
 
@@ -128,9 +129,18 @@ export default function Home() {
       <Header isLandingPage={true} />
       <Hero />
 
-      <span id="work" style={{ position: "relative", top: -80 }}></span>
+      <span id="career" style={{ position: "relative", top: 0 }}></span>
+      <Timeline />
 
-      <h2 className={styles.projectsTitle}>Projects</h2>
+      <span id="work" style={{ position: "relative", top: 0 }}></span>
+      <h2 className={styles.projectsTitle}>Freelance Projects</h2>
+      <div className={styles.projectsContainer}>
+        {freelancing.map((project) => {
+          return <ProjectCard key={project.slug} project={project} />;
+        })}
+      </div>
+
+      <h2 className={styles.projectsTitle}>Playground Projects</h2>
       <div className={styles.projectsContainer}>
         {projects.map((project) => {
           return <ProjectCard key={project.slug} project={project} />;

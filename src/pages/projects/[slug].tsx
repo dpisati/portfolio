@@ -1,13 +1,13 @@
 import Head from "next/head";
 
-import Header from "../../components/Header";
 import Footer from "../../components/Footer";
+import Header from "../../components/Header";
 
 import { motion } from "framer-motion";
-import { projects } from "../../lib/data";
+import { freelancing, projects } from "../../lib/data";
 
-import ProjectPage from "../../components/ProjectPage";
 import { GetStaticPaths, GetStaticProps } from "next";
+import ProjectPage from "../../components/ProjectPage";
 
 export interface IProject {
   title: string;
@@ -30,6 +30,8 @@ export interface IProject {
     iframe: string;
   };
 }
+
+const allProjects = [...projects, ...freelancing];
 
 export default function Project(project: IProject) {
   return (
@@ -55,7 +57,7 @@ export default function Project(project: IProject) {
 
 export const getStaticProps: GetStaticProps = async (context) => {
   const { params } = context;
-  const props = projects.find((item) => item.slug === params.slug);
+  const props = allProjects.find((item) => item.slug === params.slug);
 
   return {
     props,
@@ -63,7 +65,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const paths = projects.map((project) => ({
+  const paths = allProjects.map((project) => ({
     params: {
       slug: project.slug,
     },

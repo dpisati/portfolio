@@ -95,11 +95,11 @@
 
 @media (max-width: 530px) {
     .linksContainer {
-        width: 240px;
+        width: 300px;
     }
     
     .headerContainerInner {
-        padding: 0 20px;
+        padding: 0;
     }
 }
 

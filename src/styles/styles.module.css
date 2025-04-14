@@ -12,8 +12,10 @@
     font-size: 4rem;
     display: block;
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 8rem;
     color: var(--text-primary);
+
+  
 }
 
 @media (max-width: 500px) {
@@ -23,6 +25,6 @@
 
     .projectsTitle {
         font-size: 3rem;
-        margin-top: 1rem;
+        margin-top: 8rem;
     }
 }

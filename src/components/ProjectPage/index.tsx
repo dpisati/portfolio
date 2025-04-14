@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
-import styles from "./styles.module.css";
 import { motion } from "framer-motion";
-import { fadeInUp, container, fadeInRight } from "../../utils/animations";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 import { IProject } from "../../pages/projects/[slug]";
+import { container, fadeInRight, fadeInUp } from "../../utils/animations";
+import styles from "./styles.module.css";
 
 export default function ProjectPage({ project }: { project: IProject }) {
   const [showFigma, setShowFigma] = useState(false);
