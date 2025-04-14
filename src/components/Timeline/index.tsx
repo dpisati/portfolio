@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { careerHistory } from "../../lib/data";
 import TimelineCard from "../TimelineCard";
@@ -49,14 +48,12 @@ const Timeline = () => {
       <div className={styles.timelineList}>
         <div className={styles.timelineLine} />
         {careerHistory.map((event, index) => (
-          <motion.div
+          <div
             key={index}
             className={`${styles.timelineItem} ${styles.mobileResponsive} ${
               index % 2 === 0 ? styles.left : styles.right
             }`}
             ref={refs.current[index]}
-            initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
-            transition={{ duration: 0.5, delay: index * 0.1 }}
           >
             <TimelineCard
               year={event.year}
@@ -76,7 +73,7 @@ const Timeline = () => {
                   index % 2 !== 0 ? "translateX(-50%)" : "translateX(50%)",
               }}
             />
-          </motion.div>
+          </div>
         ))}
       </div>
     </div>
