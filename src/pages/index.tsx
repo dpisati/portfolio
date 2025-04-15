@@ -127,27 +127,29 @@ export default function Home() {
       </Head>
 
       <Header isLandingPage={true} />
-      <Hero />
 
-      <span id="career" style={{ position: "relative", top: 0 }}></span>
-      <Timeline />
+      <div className={styles.container}>
+        <Hero />
+        <span id="career" style={{ position: "relative", top: 0 }}></span>
+        <Timeline />
 
-      <span id="work" style={{ position: "relative", top: 0 }}></span>
-      <h2 className={styles.projectsTitle}>Freelance Jobs</h2>
-      <div className={styles.projectsContainer}>
-        {freelancing.map((project) => {
-          return <ProjectCard key={project.slug} project={project} />;
-        })}
+        <span id="work" style={{ position: "relative", top: 0 }}></span>
+        <h2 className={styles.projectsTitle}>Freelance Jobs</h2>
+        <div className={styles.projectsContainer}>
+          {freelancing.map((project) => {
+            return <ProjectCard key={project.slug} project={project} />;
+          })}
+        </div>
+
+        <h2 className={styles.projectsTitle}>Playground Projects</h2>
+        <div className={styles.projectsContainer}>
+          {projects.map((project) => {
+            return <ProjectCard key={project.slug} project={project} />;
+          })}
+        </div>
+
+        <About />
       </div>
-
-      <h2 className={styles.projectsTitle}>Playground Projects</h2>
-      <div className={styles.projectsContainer}>
-        {projects.map((project) => {
-          return <ProjectCard key={project.slug} project={project} />;
-        })}
-      </div>
-
-      <About />
       <Footer isLandingPage={true} />
     </motion.div>
   );
