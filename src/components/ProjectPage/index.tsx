@@ -18,7 +18,7 @@ export default function ProjectPage({ project }: { project: IProject }) {
     <main className={styles.projectContainer}>
       <div
         className={styles.projectContent}
-        style={{ border: ` 1px solid ${project.color}` }}
+        style={{ border: `1px solid ${project.color}` }}
       >
         <span
           style={{

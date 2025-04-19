@@ -19,6 +19,21 @@
   
 }
 
+.timelineCardContainer:hover {
+  cursor: pointer;
+  filter: brightness(1.05);
+  transition: all 0.150s ;
+}
+
+.timelineCardContainer:hover  h3 {
+  text-decoration: underline;
+  color: vat(--text-secondary);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
+  cursor: pointer;
+}
+
 .timelineTitle {
   font-family: 'Lalezar', sans-serif;
   font-weight: normal;
@@ -46,9 +61,9 @@
   list-style: none;
   padding: 0;
   
-  @media (max-width: 768px) {    
+  @media (max-width: 968px) {    
     display: flex;
-    gap: 2rem;
+    gap: 1.5rem;
   }
 }
 
@@ -70,8 +85,14 @@
   z-index: 2;
   display: flex;
   flex-direction: column;
+}
 
- 
+.timelineItem:hover .timelineDot {
+  background-color: rgb(209, 209, 209);
+}
+
+.timelineWrapper > div:not(:first-child) {
+  margin-top: -100px;
 }
 
 .timelineItem.left {

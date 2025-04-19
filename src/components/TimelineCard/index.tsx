@@ -46,18 +46,24 @@ const TimelineCard: React.FC<TimelineCardProps> = ({
       className={styles.timelineCard}
       ref={ref}
       animate={animation}
-      transition={{ duration: 0.5, ease: "easeInOut" }}
+      style={{
+        border: `2px solid ${details?.color}`,
+      }}
+      transition={{ duration: 0.15, ease: "easeInOut" }}
+      whileHover={{
+        backgroundColor: `${details?.color}15`,
+      }}
     >
-      <h3 className={styles.company}>
-        <a href={details.url} target="_blank" rel="noreferrer">
-          {company}
-        </a>
-      </h3>
+      <h3 className={styles.company}>{company}</h3>
 
       <h4 className={styles.title}>{title}</h4>
       <h5 className={styles.year}>{year}</h5>
 
-      <p className={styles.description}>{description}</p>
+      <p className={styles.description}>
+        {description.length > 80
+          ? description.slice(0, 80) + "... (read more)"
+          : description}
+      </p>
       <ul
         className={styles.toolsList}
         style={{

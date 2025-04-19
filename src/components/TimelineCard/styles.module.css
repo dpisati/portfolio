@@ -34,12 +34,7 @@
   color: var(--text-secondary);
 }
 
-.company:hover {  
-    text-decoration: underline;
-    text-underline-offset: 4px;
-    text-decoration-thickness: 2px;
-    cursor: pointer;
-}
+
 
 .timelineCard {
     background-color: var(--background-secondary);
@@ -51,10 +46,14 @@
     
 
     
-    transition: box-shadow 0.3s;
-    box-shadow: 0 0 31px rgba(0, 0, 0, 0.2);
-    -webkit-box-shadow: 0 0 31px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0 0 31px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.150s;
+    
+}
+
+.timelineCard:hover {
+  box-shadow: 0 0 31px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 31px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 31px rgba(0, 0, 0, 0.2);
 }
 
 .timelineCard > h3 {

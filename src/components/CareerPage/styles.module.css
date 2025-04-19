@@ -1,0 +1,397 @@
+.projectContainer {
+    padding-top: 110px;
+    margin-bottom: 120px;
+
+    
+    min-height: calc(100vh - 120px - 120px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectContent {
+    margin: 40px 0;
+    background-color: var(--background-secondary);
+    height: 100%;    
+    border-radius: 10px;
+    padding: 60px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.companyBtn {
+    transition: filter 0.2s;
+    height: 142px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.companyBtn:hover {
+    filter: brightness(0.8);
+}
+.companyBtn:hover {
+    filter: contrast(120%);
+}
+
+.projectContent > span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 8px;
+    height: 100%;
+}
+
+
+
+.projectContent > header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+.projectContent > header > div {
+    width: 50%;
+    
+}
+
+.projectContent > header > aside {    
+    max-width: 520px;
+}
+
+
+
+
+.projectTitle > h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 3.8rem;
+}
+
+.projectTitle > h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-top: 30px;
+    font-style: italic;
+    margin-left: 5px;
+}
+
+.projectTitle > h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-top: 12px;
+    font-style: italic;
+    margin-left: 5px;
+    color: var(--text-primary);
+}
+
+.projectContent > header > aside > p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 30px;
+    margin-top: -20px;
+    text-align: right;
+    
+}
+
+.toolsUsedContainer {
+    display: flex;    
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.tool {
+    text-align: center;
+    margin-left: 20px;
+    
+}
+
+.tool:first-child {
+    margin-left: 0;
+}
+
+.tool > p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.tool > img {
+    height: 45px;
+    width: 45px;
+}
+
+.projectBody {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    padding-top: 60px;
+}
+
+.projectBody > img {
+    max-width: 50%;
+}
+
+.projectDescription {
+    width: 50%;
+    padding-left: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    
+}
+
+.projectDescription > p {
+    line-height: 1.8em;
+    font-size: 1.2em;
+}
+
+.links {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+
+.single {
+    justify-content: flex-end;
+}
+
+.links > a {
+    border: none;
+    height: 48px;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: rgb(41, 41, 41);
+    color: white;
+}
+
+.designProcessContainer {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.designProcessContainer > hr {
+    margin-top: 40px;
+}
+
+.designProcessContainer > h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.designProcessContainer > h4 {
+    font-size: 1.1rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.designProcessContainer > p {
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.8rem;
+    line-height: 1.8em;
+    font-size: 1.1em;
+}
+
+.designPreview {
+    text-align: center;
+    font-size: 1.5rem !important;
+}
+
+.iframeContainer {
+    width: 100%;
+    height: 500px;
+}
+
+.iframeContainer > iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+@media (max-width: 950px) {
+    .projectContent {
+        padding: 40px 20px;
+        padding-left: 30px;
+    }
+
+    .projectContent > header {
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .projectContent > header > aside {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 65px;
+        
+    }
+
+    
+    .toolsUsedContainer {
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+        row-gap:    20px;
+    }
+
+    .projectContent > header > aside > p {
+        text-align: center;
+    }
+
+    .projectTitle {
+        text-align: center;
+    }
+
+    .projectBody {
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+    .projectDescription {
+        width: 100%;
+        margin-top: 40px;
+        padding-left: 20px;
+    }
+
+    .single {
+        justify-content: center;
+    }
+
+    .projectBody > img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .projectTitle > h1 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    .projectTitle > h2 {
+        font-size: 1rem;
+    }
+    .projectTitle > h3 {
+        font-size: 0.9rem;
+    }
+
+    .projectContent > header > aside > p {
+        font-size: 0.8rem;
+    }
+
+    .toolsUsedContainer {
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .tool {
+        text-align: center;
+        margin-left: 20px;
+    }
+    .tool > p {
+        font-size: 0.8rem;
+        margin-bottom: 15px;
+    }
+
+    .tool img {
+        height: 35px;
+        width: 35px;
+    }
+
+    .projectDescription {
+        padding-left: 10px;
+    }
+
+    .projectDescription > p {
+        line-height: 1.8em;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .projectContainer {
+        padding-top: 60px;
+    }
+
+    .projectContent {
+        margin-bottom: 20px;
+    }
+
+    .projectTitle > h1 {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    .projectTitle > h2 {
+        font-size: 1rem;
+        margin-top: 15px;
+    }
+
+    .projectContent > header > aside {
+        margin-top: 60px;
+        margin-bottom: 20px;
+    }
+
+    .projectContent > header > aside > p {
+        margin-bottom: 15px;
+    }
+
+    .projectDescription {
+        padding-left: 10px;
+    }
+
+    .projectDescription > p {
+        font-size: 0.9rem;
+        line-height: 1.5em;
+    }
+
+    .links > a {
+        height: 40px;
+        padding: 10px 20px;
+    }
+
+    .designProcessContainer > h3 {
+        font-size: 1.3rem;
+        line-height: 1rem;
+    }
+
+    .designProcessContainer > h4 {
+        font-size: 1rem;
+    }
+    .designPreview {
+        font-size: 1.2rem !important;
+    }
+
+    .designProcessContainer > p {
+        font-size: 0.9rem;
+        line-height: 1.5em;
+    }
+}

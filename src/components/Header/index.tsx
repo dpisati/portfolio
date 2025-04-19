@@ -7,9 +7,10 @@ import styles from "./styles.module.css";
 
 interface HeaderProps {
   isLandingPage: boolean;
+  redirectTo?: string;
 }
 
-export default function Header({ isLandingPage }: HeaderProps) {
+export default function Header({ isLandingPage, redirectTo }: HeaderProps) {
   const [isSmallNav, setIsSmallNav] = useState(false);
   const [mounted, setMounted] = useState(false);
   const { theme } = useTheme();
@@ -44,7 +45,7 @@ export default function Header({ isLandingPage }: HeaderProps) {
         {isLandingPage ? (
           <Logo />
         ) : (
-          <Link href="/#work" passHref>
+          <Link href={redirectTo ?? "/#work"} passHref>
             <div className={styles.goBack}>
               <svg
                 width="8"
