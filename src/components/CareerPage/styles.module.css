@@ -56,10 +56,7 @@
     width: 100%;
     
 }
-.projectContent > header > div {
-    width: 50%;
-    
-}
+
 
 .projectContent > header > aside {    
     max-width: 520px;
@@ -344,8 +341,13 @@
     .projectContent {
         margin-bottom: 20px;
     }
-
+    
+    .projectTitle {        
+        width: 100%;
+    }
+    
     .projectTitle > h1 {
+        width: 100%;        
         font-size: 2rem;
         line-height: 2rem;
     }
