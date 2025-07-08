@@ -14,7 +14,6 @@ export const Slider = ({
 }) => {
   return (
     <ReactCompareSlider
-      boundsPadding={20}
       changePositionOnHover
       itemOne={<ReactCompareSliderImage src={beforeImage} alt="beforeImage" />}
       itemTwo={<ReactCompareSliderImage src={afterImage} alt="afterImage" />}
