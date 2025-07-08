@@ -58,10 +58,16 @@
 @media (max-width: 420px) {
        
     .h1 {
-        width: 100%;        
+          
         font-size: 2rem;
         line-height: 2rem;
     }
+
+    .sliderContainer {    
+    border-radius: 12px;    
+    padding: 12px;   
+  
+}
 
 
 }
