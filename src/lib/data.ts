@@ -704,6 +704,11 @@ export interface ICareerHistory {
   color: string;
   mainImg?: string;
   images?: string[];
+  beforeAfter?: {
+    before: string;
+    after: string;
+    description: string;
+  }[];
 }
 
 export const careerHistory: ICareerHistory[] = [
@@ -730,6 +735,33 @@ export const careerHistory: ICareerHistory[] = [
       "/assets/images/proworkflow-1.png",
       "/assets/images/proworkflow-2.png",
       "/assets/images/proworkflow-3.png",
+    ],
+    beforeAfter: [
+      {
+        before: "/assets/images/before-after/proworkflow/PWF_01_B.png",
+        after: "/assets/images/before-after/proworkflow/PWF_01_A.png",
+        description: "Project Details Page",
+      },
+      {
+        before: "/assets/images/before-after/proworkflow/PWF_02_B.png",
+        after: "/assets/images/before-after/proworkflow/PWF_02_A.png",
+        description: "Projects List Page",
+      },
+      {
+        before: "/assets/images/before-after/proworkflow/BA-PD-Before.png",
+        after: "/assets/images/before-after/proworkflow/BA-PD-After.png",
+        description: "Project Kanban Page",
+      },
+      {
+        before: "/assets/images/before-after/proworkflow/BA-Gantt-Before.png",
+        after: "/assets/images/before-after/proworkflow/BA-Gantt-After.png",
+        description: "Gantt Chart Module",
+      },
+      {
+        before: "/assets/images/before-after/proworkflow/BA-List-Before.png",
+        after: "/assets/images/before-after/proworkflow/BA-List-After.png",
+        description: "Project List Page",
+      },
     ],
   },
   {

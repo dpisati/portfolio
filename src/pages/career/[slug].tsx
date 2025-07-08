@@ -9,6 +9,8 @@ import { careerHistory, ICareerHistory } from "../../lib/data";
 import { GetStaticPaths, GetStaticProps } from "next";
 import CareerPage from "../../components/CareerPage";
 
+import { BeforeAndAfter } from "../../components/BeforeAndAfter";
+
 const allCareer = careerHistory;
 
 export default function Career(career: ICareerHistory) {
@@ -27,6 +29,10 @@ export default function Career(career: ICareerHistory) {
         animate={{ opacity: 1, scale: 1 }}
       >
         <CareerPage career={career} />
+
+        {career.beforeAfter && (
+          <BeforeAndAfter beforeAfter={career.beforeAfter} />
+        )}
       </motion.div>
       <Footer isLandingPage={false} />
     </motion.div>

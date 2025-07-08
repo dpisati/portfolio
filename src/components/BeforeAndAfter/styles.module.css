@@ -1,0 +1,67 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    padding-bottom: 100px;
+}
+
+.sliderContainer {
+    width: 100%;
+    border-radius: 22px;
+    overflow: hidden;
+    padding: 24px;
+    background-color: black;
+    border: 1px solid #ccc;
+  box-shadow: rgba(215, 234, 255, 0.128) 0 0 32px 4px;
+}
+
+.h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 3.8rem;
+}
+
+.h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;    
+    font-style: italic;    
+    margin-top: 32px;
+}
+
+.h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-top: 12px;
+    font-style: italic;
+    margin-left: 5px;
+    color: var(--text-primary);
+}
+
+@media (max-width: 600px) {
+    .h1 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    .h2 {
+        font-size: 1rem;
+    }
+    
+
+}
+
+@media (max-width: 420px) {
+       
+    .h1 {
+        width: 100%;        
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+
+}

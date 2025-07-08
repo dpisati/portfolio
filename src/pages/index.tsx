@@ -4,12 +4,12 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import ProjectCard from "../components/ProjectCard";
-import Timeline from "../components/Timeline";
 
 import { motion } from "framer-motion";
 
-import { freelancing, projects } from "../lib/data";
+import { projects } from "../lib/data";
 
+import Timeline from "../components/Timeline";
 import styles from "../styles/styles.module.css";
 
 export default function Home() {
@@ -134,13 +134,6 @@ export default function Home() {
         <Timeline />
 
         <span id="work" style={{ position: "relative", top: 0 }}></span>
-        <h2 className={styles.projectsTitle}>Freelance Jobs</h2>
-        <div className={styles.projectsContainer}>
-          {freelancing.map((project) => {
-            return <ProjectCard key={project.slug} project={project} />;
-          })}
-        </div>
-
         <h2 className={styles.projectsTitle}>Playground Projects</h2>
         <div className={styles.projectsContainer}>
           {projects.map((project) => {
