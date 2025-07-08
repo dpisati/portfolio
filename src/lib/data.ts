@@ -779,6 +779,28 @@ export const careerHistory: ICareerHistory[] = [
     color: '#336791',
     mainImg: '/assets/images/ui-main.png',
     images: ['/assets/images/ui-1.png', '/assets/images/ui-2.png', '/assets/images/ui-3.png'],
+    beforeAfter: [
+      {
+        before: '/assets/images/before-after/ui/01_B.png',
+        after: '/assets/images/before-after/ui/01_A.png',
+        description: 'Hazard Details',
+      },
+      {
+        before: '/assets/images/before-after/ui/02_B.png',
+        after: '/assets/images/before-after/ui/02_A.png',
+        description: 'Property Accessibility',
+      },
+      {
+        before: '/assets/images/before-after/ui/03_B.png',
+        after: '/assets/images/before-after/ui/03_A.png',
+        description: 'Add Hazard Layer',
+      },
+      {
+        before: '/assets/images/before-after/ui/04_B.png',
+        after: '/assets/images/before-after/ui/04_A.png',
+        description: 'Add Asset Layer',
+      },
+    ],
   },
   {
     slug: 'phocas',
