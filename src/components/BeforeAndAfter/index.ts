@@ -1,1 +1,1 @@
-export * from "./BeforeAndAfter";
+export * from './BeforeAndAfter';

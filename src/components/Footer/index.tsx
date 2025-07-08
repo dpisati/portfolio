@@ -5,38 +5,38 @@ import styles from './styles.module.css';
 import Logo from '../Logo';
 
 interface FooterProps {
-    isLandingPage: boolean;
+  isLandingPage: boolean;
 }
 
 export default function Footer({ isLandingPage }: FooterProps) {
-    const [mounted, setMounted] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
-    useEffect(() => setMounted(true), []);
+  useEffect(() => setMounted(true), []);
 
-    if (!mounted) return null;
+  if (!mounted) return null;
 
-    return (
-        <footer className={styles.footerContainer}>
-            <div className={styles.footerContainerInner}>
-                <section>
-                    <Link href="/" passHref>
-                        <div className={styles.footerLogoContainer}>
-                            <Logo />
-                        </div>
-                    </Link>
-                    <div className={styles.nameContainer}>
-                        <h3>Daniel Pisati</h3>
-                    </div>
-                </section>
-                <div>
-                    <Link href={isLandingPage ? '#work' : '/#work'}>
-                        <a className={styles.link}>Work</a>
-                    </Link>
-                    <a className={styles.link} href="mailto:dpisati@gmail.com">
-                        Contact
-                    </a>
-                </div>
+  return (
+    <footer className={styles.footerContainer}>
+      <div className={styles.footerContainerInner}>
+        <section>
+          <Link href="/" passHref>
+            <div className={styles.footerLogoContainer}>
+              <Logo />
             </div>
-        </footer>
-    );
+          </Link>
+          <div className={styles.nameContainer}>
+            <h3>Daniel Pisati</h3>
+          </div>
+        </section>
+        <div>
+          <Link href={isLandingPage ? '#work' : '/#work'}>
+            <a className={styles.link}>Work</a>
+          </Link>
+          <a className={styles.link} href="mailto:dpisati@gmail.com">
+            Contact
+          </a>
+        </div>
+      </div>
+    </footer>
+  );
 }

@@ -1,34 +1,32 @@
 .projectsContainer {
-    margin-top: 40px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 40px;
+  margin-top: 40px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 40px;
 }
 
 .projectsTitle {
-    font-family: 'Lalezar', sans-serif;
-    font-weight: normal;
-    font-size: 4rem;
-    display: block;
-    text-align: center;
-    margin-top: 8rem;
-    color: var(--text-primary);
-
-  
+  font-family: 'Lalezar', sans-serif;
+  font-weight: normal;
+  font-size: 4rem;
+  display: block;
+  text-align: center;
+  margin-top: 8rem;
+  color: var(--text-primary);
 }
 
 @media (max-width: 500px) {
-    .container {
-        margin-left: 28px;
-    }
+  .container {
+    margin-left: 28px;
+  }
 
-    .projectsContainer {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    }
+  .projectsContainer {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
 
-    .projectsTitle {
-        font-size: 3rem;
-        margin-top: 8rem;
-    }
+  .projectsTitle {
+    font-size: 3rem;
+    margin-top: 8rem;
+  }
 }

@@ -1,9 +1,9 @@
-import { motion } from "framer-motion";
-import Image from "next/image";
-import { useEffect, useState } from "react";
-import { ICareerHistory, tools } from "../../lib/data";
-import { container, fadeInRight, fadeInUp } from "../../utils/animations";
-import styles from "./styles.module.css";
+import { motion } from 'framer-motion';
+import Image from 'next/image';
+import { useEffect, useState } from 'react';
+import { ICareerHistory, tools } from '../../lib/data';
+import { container, fadeInRight, fadeInUp } from '../../utils/animations';
+import styles from './styles.module.css';
 
 export default function CareerPage({ career }: { career: ICareerHistory }) {
   const [showFigma, setShowFigma] = useState(false);
@@ -13,7 +13,7 @@ export default function CareerPage({ career }: { career: ICareerHistory }) {
 
     return {
       ...foundTool,
-      icon: foundTool ? foundTool.icon : "/images/tools/unknown.png",
+      icon: foundTool ? foundTool.icon : '/images/tools/unknown.png',
     };
   });
 
@@ -25,10 +25,7 @@ export default function CareerPage({ career }: { career: ICareerHistory }) {
 
   return (
     <main className={styles.projectContainer}>
-      <div
-        className={styles.projectContent}
-        style={{ border: `1px solid ${career.color}` }}
-      >
+      <div className={styles.projectContent} style={{ border: `1px solid ${career.color}` }}>
         <span
           style={{
             background: career.color,
@@ -52,11 +49,7 @@ export default function CareerPage({ career }: { career: ICareerHistory }) {
             </motion.h3>
           </motion.div>
 
-          <motion.aside
-            initial="initial"
-            variants={container}
-            animate="animate"
-          >
+          <motion.aside initial="initial" variants={container} animate="animate">
             <motion.p initial="initial" variants={fadeInUp} animate="animate">
               Tools used in this company
             </motion.p>
@@ -69,11 +62,7 @@ export default function CareerPage({ career }: { career: ICareerHistory }) {
             >
               {careerTools.map((tool) => {
                 return (
-                  <motion.div
-                    variants={fadeInUp}
-                    key={tool.title}
-                    className={styles.tool}
-                  >
+                  <motion.div variants={fadeInUp} key={tool.title} className={styles.tool}>
                     <Image
                       src={tool.icon}
                       alt={tool.title}

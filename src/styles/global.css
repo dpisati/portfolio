@@ -1,59 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200;400;700&family=Poppins:wght@300&family=Montserrat:wght@300;400;700&&family=Work+Sans:wght@700&display=swap');
 
 :root {
-    --background-primary: #ffffff;
-    --background-secondary: #faf9f9;
+  --background-primary: #ffffff;
+  --background-secondary: #faf9f9;
 
-    --contrast: #131313;
+  --contrast: #131313;
 
-    --animated-cubes: #eceaea;
+  --animated-cubes: #eceaea;
 
-    --text-primary: #3b3b3b;
-    --text-secondary: #1d1d1d;
+  --text-primary: #3b3b3b;
+  --text-secondary: #1d1d1d;
 }
 
 [data-theme='dark'] {
-    --background-primary: #1d1d1d;
-    --background-secondary: #242323;
+  --background-primary: #1d1d1d;
+  --background-secondary: #242323;
 
-    --contrast: #e4e4e4;
+  --contrast: #e4e4e4;
 
-    --animated-cubes: #272527;
+  --animated-cubes: #272527;
 
-    --text-primary: #f3f3f3;
-    --text-secondary: #e4e4e4;
+  --text-primary: #f3f3f3;
+  --text-secondary: #e4e4e4;
 }
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
-    background-color: var(--background-primary);
+  scroll-behavior: smooth;
+  background-color: var(--background-primary);
 }
 
 a {
-    color: inherit;
-    text-decoration: inherit;
+  color: inherit;
+  text-decoration: inherit;
 }
 
 body {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 40px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 40px;
 }
 
 @media (max-width: 1043px) {
-    body {
-        padding: 0 40px;
-    }
+  body {
+    padding: 0 40px;
+  }
 }
 
 @media (max-width: 665px) {
-    body {
-        padding: 0 20px;
-    }
+  body {
+    padding: 0 20px;
+  }
 }

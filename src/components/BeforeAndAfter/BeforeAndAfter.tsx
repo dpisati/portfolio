@@ -1,12 +1,8 @@
-import { ICareerHistory } from "../../lib/data";
-import { Slider } from "../Slider";
-import styles from "./styles.module.css";
+import { ICareerHistory } from '../../lib/data';
+import { Slider } from '../Slider';
+import styles from './styles.module.css';
 
-export const BeforeAndAfter = ({
-  beforeAfter,
-}: {
-  beforeAfter: ICareerHistory["beforeAfter"];
-}) => {
+export const BeforeAndAfter = ({ beforeAfter }: { beforeAfter: ICareerHistory['beforeAfter'] }) => {
   return (
     <div className={styles.container}>
       <h1 className={styles.h1}>Before & After</h1>

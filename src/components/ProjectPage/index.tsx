@@ -1,9 +1,9 @@
-import { motion } from "framer-motion";
-import Image from "next/image";
-import { useEffect, useState } from "react";
-import { IProject } from "../../pages/projects/[slug]";
-import { container, fadeInRight, fadeInUp } from "../../utils/animations";
-import styles from "./styles.module.css";
+import { motion } from 'framer-motion';
+import Image from 'next/image';
+import { useEffect, useState } from 'react';
+import { IProject } from '../../pages/projects/[slug]';
+import { container, fadeInRight, fadeInUp } from '../../utils/animations';
+import styles from './styles.module.css';
 
 export default function ProjectPage({ project }: { project: IProject }) {
   const [showFigma, setShowFigma] = useState(false);
@@ -16,10 +16,7 @@ export default function ProjectPage({ project }: { project: IProject }) {
 
   return (
     <main className={styles.projectContainer}>
-      <div
-        className={styles.projectContent}
-        style={{ border: `1px solid ${project.color}` }}
-      >
+      <div className={styles.projectContent} style={{ border: `1px solid ${project.color}` }}>
         <span
           style={{
             background: project.color,
@@ -40,11 +37,7 @@ export default function ProjectPage({ project }: { project: IProject }) {
             </motion.h2>
           </motion.div>
 
-          <motion.aside
-            initial="initial"
-            variants={container}
-            animate="animate"
-          >
+          <motion.aside initial="initial" variants={container} animate="animate">
             <motion.p initial="initial" variants={fadeInUp} animate="animate">
               Tools used in this project
             </motion.p>
@@ -57,11 +50,7 @@ export default function ProjectPage({ project }: { project: IProject }) {
             >
               {project.tools.map((tool) => {
                 return (
-                  <motion.div
-                    variants={fadeInUp}
-                    key={tool.name}
-                    className={styles.tool}
-                  >
+                  <motion.div variants={fadeInUp} key={tool.name} className={styles.tool}>
                     <Image
                       src={tool.icon}
                       alt={tool.name}
@@ -97,11 +86,7 @@ export default function ProjectPage({ project }: { project: IProject }) {
               animate="animate"
               className={`
                                 ${styles.links} 
-                                ${
-                                  project.demo && project.github
-                                    ? ""
-                                    : styles.single
-                                }
+                                ${project.demo && project.github ? '' : styles.single}
                             `}
             >
               {project.demo && (

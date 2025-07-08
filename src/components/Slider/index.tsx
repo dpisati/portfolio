@@ -1,9 +1,6 @@
-"use client";
+'use client';
 
-import {
-  ReactCompareSlider,
-  ReactCompareSliderImage,
-} from "react-compare-slider";
+import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
 
 export const Slider = ({
   beforeImage,

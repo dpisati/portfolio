@@ -1,9 +1,9 @@
-import { useTheme } from "next-themes";
-import Link from "next/link";
-import { useEffect, useState } from "react";
-import Logo from "../Logo";
-import { ThemeChanger } from "../ThemeChanger";
-import styles from "./styles.module.css";
+import { useTheme } from 'next-themes';
+import Link from 'next/link';
+import { useEffect, useState } from 'react';
+import Logo from '../Logo';
+import { ThemeChanger } from '../ThemeChanger';
+import styles from './styles.module.css';
 
 interface HeaderProps {
   isLandingPage: boolean;
@@ -23,10 +23,10 @@ export default function Header({ isLandingPage, redirectTo }: HeaderProps) {
         setIsSmallNav(false);
       }
     };
-    window.addEventListener("scroll", changeNavBackground);
+    window.addEventListener('scroll', changeNavBackground);
 
     return () => {
-      window.removeEventListener("scroll", changeNavBackground);
+      window.removeEventListener('scroll', changeNavBackground);
     };
   }, []);
 
@@ -38,14 +38,14 @@ export default function Header({ isLandingPage, redirectTo }: HeaderProps) {
     <header
       className={`
                 ${styles.headerContainer} 
-                ${isSmallNav ? styles.smallNav : ""}
+                ${isSmallNav ? styles.smallNav : ''}
             `}
     >
       <div className={styles.headerContainerInner}>
         {isLandingPage ? (
           <Logo />
         ) : (
-          <Link href={redirectTo ?? "/#work"} passHref>
+          <Link href={redirectTo ?? '/#work'} passHref>
             <div className={styles.goBack}>
               <svg
                 width="8"
@@ -56,7 +56,7 @@ export default function Header({ isLandingPage, redirectTo }: HeaderProps) {
               >
                 <path
                   d="M0.294922 6.70496L6.29492 12.705L7.70492 11.295L3.12492 6.70496L7.70492 2.11496L6.29492 0.704956L0.294922 6.70496Z"
-                  fill={`${theme === "light" ? "#323232" : "#fff"}`}
+                  fill={`${theme === 'light' ? '#323232' : '#fff'}`}
                 />
               </svg>
             </div>
@@ -64,13 +64,13 @@ export default function Header({ isLandingPage, redirectTo }: HeaderProps) {
         )}
 
         <div className={styles.linksContainer}>
-          <Link href={isLandingPage ? "#career" : "/#career"}>
+          <Link href={isLandingPage ? '#career' : '/#career'}>
             <a className={styles.link}>Career</a>
           </Link>
-          <Link href={isLandingPage ? "#work" : "/#work"}>
+          <Link href={isLandingPage ? '#work' : '/#work'}>
             <a className={styles.link}>Work</a>
           </Link>
-          <Link href={isLandingPage ? "#about" : "/#about"}>
+          <Link href={isLandingPage ? '#about' : '/#about'}>
             <a className={styles.link}>About</a>
           </Link>
           <a className={styles.link} href="mailto:dpisati@gmail.com">

@@ -1,9 +1,9 @@
-import { motion, useAnimation } from "framer-motion";
-import React, { useEffect } from "react";
-import { useInView } from "react-intersection-observer";
-import styles from "./styles.module.css";
+import { motion, useAnimation } from 'framer-motion';
+import React, { useEffect } from 'react';
+import { useInView } from 'react-intersection-observer';
+import styles from './styles.module.css';
 
-import { careerHistory, tools as dataTools } from "../../lib/data";
+import { careerHistory, tools as dataTools } from '../../lib/data';
 
 interface TimelineCardProps {
   year: string;
@@ -49,7 +49,7 @@ const TimelineCard: React.FC<TimelineCardProps> = ({
       style={{
         border: `2px solid ${details?.color}`,
       }}
-      transition={{ duration: 0.15, ease: "easeInOut" }}
+      transition={{ duration: 0.15, ease: 'easeInOut' }}
       whileHover={{
         backgroundColor: `${details?.color}15`,
       }}
@@ -60,16 +60,14 @@ const TimelineCard: React.FC<TimelineCardProps> = ({
       <h5 className={styles.year}>{year}</h5>
 
       <p className={styles.description}>
-        {description.length > 80
-          ? description.slice(0, 80) + "... (read more)"
-          : description}
+        {description.length > 80 ? description.slice(0, 80) + '... (read more)' : description}
       </p>
       <ul
         className={styles.toolsList}
         style={{
-          display: "flex",
-          flexWrap: "wrap",
-          justifyContent: left ? "flex-end" : "flex-start",
+          display: 'flex',
+          flexWrap: 'wrap',
+          justifyContent: left ? 'flex-end' : 'flex-start',
         }}
       >
         {tools.map((t, index) => {

@@ -1,12 +1,9 @@
-.timelineCardContainer {  
+.timelineCardContainer {
   border-radius: 8px;
-  
+
   padding: 1.5rem;
   margin: 1rem 0;
-  
 }
-
-
 
 .timelineYear {
   font-size: 1.2rem;
@@ -34,20 +31,15 @@
   color: var(--text-secondary);
 }
 
-
-
 .timelineCard {
-    background-color: var(--background-secondary);
-    border-radius: 30px;
-    padding: 32px 40px;
-    color: #fff;
-    position: relative;
-    overflow: hidden;
-    
+  background-color: var(--background-secondary);
+  border-radius: 30px;
+  padding: 32px 40px;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
 
-    
-    transition: box-shadow 0.150s;
-    
+  transition: box-shadow 0.15s;
 }
 
 .timelineCard:hover {
@@ -57,64 +49,59 @@
 }
 
 .timelineCard > h3 {
-    font-family: 'Lalezar', sans-serif;
-    font-weight: normal;
-    font-size: 2.5rem;
-    line-height: 2.5rem;
-    position: relative;
-    z-index: 5;
-    color: var(--text-primary);
+  font-family: 'Lalezar', sans-serif;
+  font-weight: normal;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  position: relative;
+  z-index: 5;
+  color: var(--text-primary);
 }
 
 .timelineCard > h4 {
-    font-family: 'Montserrat', sans-serif;
-    position: relative;
-    z-index: 5;
-    color: var(--text-secondary);
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  z-index: 5;
+  color: var(--text-secondary);
 }
 
 .timelineCard > h5 {
-    font-family: 'Montserrat', sans-serif;
-    position: relative;
-    z-index: 5;
-    color: var(--text-secondary);
-    font-weight: 500;
-    margin-top: 0.4rem;
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  z-index: 5;
+  color: var(--text-secondary);
+  font-weight: 500;
+  margin-top: 0.4rem;
 }
 
 .timelineCard > p {
-    font-family: 'Montserrat', sans-serif;
-    position: relative;
-    z-index: 5;
-    color: var(--text-secondary);
-    margin: 1.5rem 0;
-    line-height: 155%;
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  z-index: 5;
+  color: var(--text-secondary);
+  margin: 1.5rem 0;
+  line-height: 155%;
 }
 
 .toolsList {
-    margin-top: 20px;
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 6px;
-    font-family: 'Oxanium', sans-serif;   
+  margin-top: 20px;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  font-family: 'Oxanium', sans-serif;
 
-    @media (max-width: 768px) {
-      justify-content: start !important;
-    }
-    
+  @media (max-width: 768px) {
+    justify-content: start !important;
+  }
 }
-
 
 .toolItem {
-    
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-size: 0.9rem;
-    color: var(--text-primary);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  color: var(--text-primary);
 
-    
-    border-radius: 5px;
+  border-radius: 5px;
 }
-

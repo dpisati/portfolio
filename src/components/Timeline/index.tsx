@@ -1,8 +1,8 @@
-import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
-import { careerHistory, ICareerHistory } from "../../lib/data";
-import TimelineCard from "../TimelineCard";
-import styles from "./styles.module.css";
+import Link from 'next/link';
+import { useEffect, useRef, useState } from 'react';
+import { careerHistory, ICareerHistory } from '../../lib/data';
+import TimelineCard from '../TimelineCard';
+import styles from './styles.module.css';
 const Timeline = () => {
   const refs = useRef([]);
 
@@ -14,19 +14,19 @@ const Timeline = () => {
     };
 
     handleResize(); // Check on initial load
-    window.addEventListener("resize", handleResize);
+    window.addEventListener('resize', handleResize);
 
     return () => {
-      window.removeEventListener("resize", handleResize);
+      window.removeEventListener('resize', handleResize);
     };
   }, []);
 
   const getUrl = (event: ICareerHistory) => {
     switch (event.company) {
-      case "Tripod Digital":
-        return "/projects/mixr";
-      case "Motorly":
-        return "/projects/motorly";
+      case 'Tripod Digital':
+        return '/projects/mixr';
+      case 'Motorly':
+        return '/projects/motorly';
 
       default:
         return `/career/${event.slug}`;
@@ -40,10 +40,7 @@ const Timeline = () => {
         <div className={styles.timelineList}>
           {careerHistory.map((event, index) => (
             <Link href={getUrl(event)} passHref key={index}>
-              <div
-                className={styles.timelineCardContainer}
-                style={{ zIndex: 1 }}
-              >
+              <div className={styles.timelineCardContainer} style={{ zIndex: 1 }}>
                 <TimelineCard
                   year={event.year}
                   company={event.company}
@@ -75,10 +72,7 @@ const Timeline = () => {
               ref={refs.current[index]}
             >
               <Link href={getUrl(event)} passHref>
-                <div
-                  className={styles.timelineCardContainer}
-                  style={{ zIndex: 1 }}
-                >
+                <div className={styles.timelineCardContainer} style={{ zIndex: 1 }}>
                   <TimelineCard
                     year={event.year}
                     company={event.company}
@@ -93,11 +87,10 @@ const Timeline = () => {
                 className={styles.timelineDot}
                 style={{
                   border: `2px solid ${event.color}`,
-                  top: "40px",
-                  left: index % 2 === 0 ? "auto" : 0,
-                  right: index % 2 === 0 ? 0 : "auto",
-                  transform:
-                    index % 2 !== 0 ? "translateX(-50%)" : "translateX(50%)",
+                  top: '40px',
+                  left: index % 2 === 0 ? 'auto' : 0,
+                  right: index % 2 === 0 ? 0 : 'auto',
+                  transform: index % 2 !== 0 ? 'translateX(-50%)' : 'translateX(50%)',
                 }}
               />
             </div>

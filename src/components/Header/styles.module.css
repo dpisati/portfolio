@@ -1,106 +1,106 @@
 .headerContainer {
-    width: 100%;
-    height: 110px;
-    background-color: var(--background-secondary);
-    position: fixed;
-    z-index: 50;
-    left: 0;
-    display: flex;
-    align-items: center;
-    box-shadow: 0 0 14px rgba(0, 0, 0, 0.1);
-    -webkit-box-shadow: 0 0 14px rgba(0, 0, 0, 0.1);
-    -moz-box-shadow: 0 0 14px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 110px;
+  background-color: var(--background-secondary);
+  position: fixed;
+  z-index: 50;
+  left: 0;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 0 14px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 14px rgba(0, 0, 0, 0.1);
 
-    transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .smallNav {
-    height: 70px;
+  height: 70px;
 }
 
 .headerContainerInner {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1440px;
-    padding: 0 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-family: 'Oxanium', sans-serif;
-    font-weight: bold;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Oxanium', sans-serif;
+  font-weight: bold;
 }
 
 .linksContainer {
-    width: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .goBack {
-    width: 38px;
-    height: 38px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid var(--contrast);
-    cursor: pointer;
-    transition: background-color 0.2s;
-    background-color: var(--background-secondary);
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--contrast);
+  cursor: pointer;
+  transition: background-color 0.2s;
+  background-color: var(--background-secondary);
 }
 
 .goBack:hover {
-    background-color: var(--background-primary);
+  background-color: var(--background-primary);
 }
 
 .goBack img {
-    height: 40px;
-    width: 60px;
+  height: 40px;
+  width: 60px;
 }
 
 .link {
-    color: var(--text-primary);
-    transition: all 0.2s;
+  color: var(--text-primary);
+  transition: all 0.2s;
 }
 
 .link:hover {
-    color: #008fbb;
+  color: #008fbb;
 }
 
 .colorModeSwitcher {
-    width: 2rem;
-    height: 2rem;
+  width: 2rem;
+  height: 2rem;
 }
 
 @media (max-width: 1043px) {
-    .headerContainer {
-        padding: 0 40px;
-    }
+  .headerContainer {
+    padding: 0 40px;
+  }
 }
 
 @media (max-width: 665px) {
-    .headerContainer {
-        padding: 0 20px;
-        height: 80px;
-        box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-        -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-        -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-    }
+  .headerContainer {
+    padding: 0 20px;
+    height: 80px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  }
 
-    .smallNav {
-        height: 70px;
-    }
+  .smallNav {
+    height: 70px;
+  }
 }
 
 @media (max-width: 530px) {
-    .linksContainer {
-        width: 300px;
-    }
-    
-    .headerContainerInner {
-        padding: 0;
-    }
+  .linksContainer {
+    width: 300px;
+  }
+
+  .headerContainerInner {
+    padding: 0;
+  }
 }
 
 /* @media (max-width: 400px) {

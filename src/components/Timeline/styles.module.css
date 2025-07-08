@@ -8,24 +8,21 @@
   overflow: hidden;
   background-color: transparent;
   border-radius: 8px;
-  
+
   overflow: visible;
 
-  @media (max-width: 768px) {    
+  @media (max-width: 768px) {
     padding: 0;
   }
-
-  
-  
 }
 
 .timelineCardContainer:hover {
   cursor: pointer;
   filter: brightness(1.05);
-  transition: all 0.150s ;
+  transition: all 0.15s;
 }
 
-.timelineCardContainer:hover  h3 {
+.timelineCardContainer:hover h3 {
   text-decoration: underline;
   color: vat(--text-secondary);
   text-decoration: underline;
@@ -43,8 +40,7 @@
   margin: 2rem 0;
   color: var(--text-primary);
 
-  @media (max-width: 768px) {    
-    
+  @media (max-width: 768px) {
     line-height: 100%;
     font-size: 3rem;
   }
@@ -55,13 +51,13 @@
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  
+
   flex-direction: column;
   align-items: center;
   list-style: none;
   padding: 0;
-  
-  @media (max-width: 968px) {    
+
+  @media (max-width: 968px) {
     display: flex;
     gap: 1.5rem;
   }
@@ -111,7 +107,6 @@
   background-color: var(--background-secondary);
   padding: 1rem;
   border-radius: 8px;
-  
 }
 
 .timelineYear {
@@ -149,16 +144,15 @@
   font-size: 0.8rem;
 }
 
-
 .timelineDot {
   position: absolute;
-  
+
   width: 16px;
   height: 16px;
   background-color: var(--background-primary);
   border: 2px solid #ccc;
   border-radius: 50%;
-  
+
   z-index: 3;
 }
 
@@ -175,4 +169,3 @@
   align-items: center;
   overflow: hidden;
 }
-

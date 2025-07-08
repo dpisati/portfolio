@@ -1,12 +1,12 @@
-import Image from "next/image";
-import Link from "next/link";
-import { useEffect } from "react";
+import Image from 'next/image';
+import Link from 'next/link';
+import { useEffect } from 'react';
 
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import { IProject } from "../../pages/projects/[slug]";
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+import { IProject } from '../../pages/projects/[slug]';
 
-import styles from "./styles.module.css";
+import styles from './styles.module.css';
 
 export default function ProjectCard({ project }: { project: IProject }) {
   const { ref, inView } = useInView({ threshold: 0.2 });
@@ -46,7 +46,7 @@ export default function ProjectCard({ project }: { project: IProject }) {
         <div className={styles.projectImgPreview}>
           <Image
             src={project.img}
-            alt={project.title + " preview"}
+            alt={project.title + ' preview'}
             width={260}
             height={150}
             layout="responsive"

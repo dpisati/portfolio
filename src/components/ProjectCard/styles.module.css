@@ -1,71 +1,71 @@
 .projectCardContainer {
-    height: 320px;
-    border-radius: 30px;
-    padding: 40px;
-    color: #fff;
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-    transition: box-shadow 0.3s;
+  height: 320px;
+  border-radius: 30px;
+  padding: 40px;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
 }
 
 .projectCardContainer > h2 {
-    font-family: 'Lalezar', sans-serif;
-    font-weight: normal;
-    font-size: 3rem;
-    line-height: 3rem;
-    position: relative;
-    z-index: 5;
+  font-family: 'Lalezar', sans-serif;
+  font-weight: normal;
+  font-size: 3rem;
+  line-height: 3rem;
+  position: relative;
+  z-index: 5;
 }
 
 .projectCardContainer > p {
-    font-family: 'Montserrat', sans-serif;
-    position: relative;
-    z-index: 5;
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  z-index: 5;
 }
 
 .projectImgPreview {
-    width: 100%;
-    width: 260px;
-    float: right;
-    position: relative;
-    z-index: 5;
-    margin-top: 20px;
+  width: 100%;
+  width: 260px;
+  float: right;
+  position: relative;
+  z-index: 5;
+  margin-top: 20px;
 }
 
 .background {
-    width: 100%;
-    height: 100%;
-    left: 40%;
-    top: 40%;
-    transform: translate(-50%, -50%) rotate(-10deg);
-    position: absolute;
-    z-index: 1;
-    opacity: 0.04;
-    height: auto;
-    transition: transform 0.3s;
+  width: 100%;
+  height: 100%;
+  left: 40%;
+  top: 40%;
+  transform: translate(-50%, -50%) rotate(-10deg);
+  position: absolute;
+  z-index: 1;
+  opacity: 0.04;
+  height: auto;
+  transition: transform 0.3s;
 }
 
 .projectCardContainer:hover {
-    box-shadow: 0 0 31px rgba(0, 0, 0, 0.2);
-    -webkit-box-shadow: 0 0 31px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0 0 31px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 31px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 31px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 31px rgba(0, 0, 0, 0.2);
 }
 
 .projectCardContainer:hover .background {
-    transform: translate(-50%, -50%) rotate(-10deg) scale(1.4);
+  transform: translate(-50%, -50%) rotate(-10deg) scale(1.4);
 }
 
 @media (max-width: 500px) {
-    .projectCardContainer {
-        padding: 40px;
-    }
-    .projectCardContainer > h2 {
-        font-size: 2.3rem;
-        line-height: 2.5rem;
-    }
+  .projectCardContainer {
+    padding: 40px;
+  }
+  .projectCardContainer > h2 {
+    font-size: 2.3rem;
+    line-height: 2.5rem;
+  }
 
-    .projectCardContainer > p {
-        margin-bottom: 10px;
-    }
+  .projectCardContainer > p {
+    margin-bottom: 10px;
+  }
 }

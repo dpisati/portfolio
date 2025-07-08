@@ -1,88 +1,88 @@
 .footerContainer {
-    width: 100%;
-    height: 120px;
-    background-color: var(--background-secondary);
-    width: calc(100vw - 20px);
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+  width: 100%;
+  height: 120px;
+  background-color: var(--background-secondary);
+  width: calc(100vw - 20px);
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .footerContainerInner {
-    margin: 0 auto;
-    max-width: 1044px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 35px;
+  margin: 0 auto;
+  max-width: 1044px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 35px;
 }
 
 .footerContainerInner > section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: 'Oxanium', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Oxanium', sans-serif;
 }
 
 .footerLogoContainer {
-    height: 35px;
-    width: 60px;
+  height: 35px;
+  width: 60px;
 }
 
 .nameContainer {
-    margin-left: 40px;
+  margin-left: 40px;
 }
 
 .nameContainer > h3 {
-    font-size: 1.4rem;
+  font-size: 1.4rem;
 }
 
 .nameContainer > p {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 0.9rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
 }
 
 .footerContainerInner > div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 200px;
-    font-family: 'Oxanium', sans-serif;
-    font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+  font-family: 'Oxanium', sans-serif;
+  font-weight: bold;
 }
 
 .link {
-    color: var(--text-primary);
-    transition: all 0.2s;
+  color: var(--text-primary);
+  transition: all 0.2s;
 }
 
 .link:hover {
-    color: #008fbb;
+  color: #008fbb;
 }
 
 @media (max-width: 1044px) {
-    .footerContainerInner {
-        padding: 0 40px;
-        padding-top: 40px;
-    }
+  .footerContainerInner {
+    padding: 0 40px;
+    padding-top: 40px;
+  }
 }
 
 @media (max-width: 600px) {
-    .footerContainer {
-        height: 80px;
-    }
+  .footerContainer {
+    height: 80px;
+  }
 
-    .nameContainer {
-        display: none;
-    }
+  .nameContainer {
+    display: none;
+  }
 
-    .footerContainerInner {
-        padding: 0 20px;
-        padding-top: 22px;
-    }
+  .footerContainerInner {
+    padding: 0 20px;
+    padding-top: 22px;
+  }
 
-    .footerContainerInner > div {
-        width: 160px;
-    }
+  .footerContainerInner > div {
+    width: 160px;
+  }
 }

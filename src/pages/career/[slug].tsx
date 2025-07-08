@@ -1,38 +1,29 @@
-import Head from "next/head";
+import Head from 'next/head';
 
-import Footer from "../../components/Footer";
-import Header from "../../components/Header";
+import Footer from '../../components/Footer';
+import Header from '../../components/Header';
 
-import { motion } from "framer-motion";
-import { careerHistory, ICareerHistory } from "../../lib/data";
+import { motion } from 'framer-motion';
+import { careerHistory, ICareerHistory } from '../../lib/data';
 
-import { GetStaticPaths, GetStaticProps } from "next";
-import CareerPage from "../../components/CareerPage";
+import { GetStaticPaths, GetStaticProps } from 'next';
+import CareerPage from '../../components/CareerPage';
 
-import { BeforeAndAfter } from "../../components/BeforeAndAfter";
+import { BeforeAndAfter } from '../../components/BeforeAndAfter';
 
 const allCareer = careerHistory;
 
 export default function Career(career: ICareerHistory) {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-    >
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
       <Head>
         <title>Daniel Pisati - {career.title}</title>
       </Head>
       <Header isLandingPage={false} redirectTo="/#career" />
-      <motion.div
-        initial={{ opacity: 0, scale: 2.5 }}
-        animate={{ opacity: 1, scale: 1 }}
-      >
+      <motion.div initial={{ opacity: 0, scale: 2.5 }} animate={{ opacity: 1, scale: 1 }}>
         <CareerPage career={career} />
 
-        {career.beforeAfter && (
-          <BeforeAndAfter beforeAfter={career.beforeAfter} />
-        )}
+        {career.beforeAfter && <BeforeAndAfter beforeAfter={career.beforeAfter} />}
       </motion.div>
       <Footer isLandingPage={false} />
     </motion.div>

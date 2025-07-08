@@ -1,13 +1,13 @@
-import Head from "next/head";
+import Head from 'next/head';
 
-import Footer from "../../components/Footer";
-import Header from "../../components/Header";
+import Footer from '../../components/Footer';
+import Header from '../../components/Header';
 
-import { motion } from "framer-motion";
-import { freelancing, projects } from "../../lib/data";
+import { motion } from 'framer-motion';
+import { freelancing, projects } from '../../lib/data';
 
-import { GetStaticPaths, GetStaticProps } from "next";
-import ProjectPage from "../../components/ProjectPage";
+import { GetStaticPaths, GetStaticProps } from 'next';
+import ProjectPage from '../../components/ProjectPage';
 
 export interface IProject {
   title: string;
@@ -35,19 +35,12 @@ const allProjects = [...projects, ...freelancing];
 
 export default function Project(project: IProject) {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-    >
+    <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
       <Head>
         <title>Daniel Pisati - {project.title}</title>
       </Head>
       <Header isLandingPage={false} />
-      <motion.div
-        initial={{ opacity: 0, scale: 2.5 }}
-        animate={{ opacity: 1, scale: 1 }}
-      >
+      <motion.div initial={{ opacity: 0, scale: 2.5 }} animate={{ opacity: 1, scale: 1 }}>
         <ProjectPage project={project} />
       </motion.div>
       <Footer isLandingPage={false} />
