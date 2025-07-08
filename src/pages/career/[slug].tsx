@@ -10,6 +10,7 @@ import { GetStaticPaths, GetStaticProps } from 'next';
 import CareerPage from '../../components/CareerPage';
 
 import { BeforeAndAfter } from '../../components/BeforeAndAfter';
+import { MarketingImages } from '../../components/MarketingImages';
 
 const allCareer = careerHistory;
 
@@ -24,6 +25,7 @@ export default function Career(career: ICareerHistory) {
         <CareerPage career={career} />
 
         {career.beforeAfter && <BeforeAndAfter beforeAfter={career.beforeAfter} />}
+        {career.marketingImgs && <MarketingImages marketingImgs={career.marketingImgs} />}
       </motion.div>
       <Footer isLandingPage={false} />
     </motion.div>

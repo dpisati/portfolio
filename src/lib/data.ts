@@ -709,6 +709,7 @@ export interface ICareerHistory {
     after: string;
     description: string;
   }[];
+  marketingImgs?: string[];
 }
 
 export const careerHistory: ICareerHistory[] = [
@@ -800,6 +801,14 @@ export const careerHistory: ICareerHistory[] = [
         after: '/assets/images/before-after/ui/04_A.png',
         description: 'Add Asset Layer',
       },
+    ],
+    marketingImgs: [
+      '/assets/images/mkt/ui/01.png',
+      '/assets/images/mkt/ui/02.png',
+      '/assets/images/mkt/ui/03.png',
+      '/assets/images/mkt/ui/04.png',
+      '/assets/images/mkt/ui/05.png',
+      '/assets/images/mkt/ui/06.png',
     ],
   },
   {
