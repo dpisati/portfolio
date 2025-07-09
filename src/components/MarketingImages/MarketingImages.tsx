@@ -12,18 +12,7 @@ export const MarketingImages = ({
   return (
     <motion.div initial={{ opacity: 0, scale: 2.5 }} animate={{ opacity: 1, scale: 1 }}>
       <h1 className={styles.h1}>Marketing Images</h1>
-      <motion.div
-        initial="initial"
-        variants={container}
-        animate="animate"
-        style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fill, minmax(400px, 1fr))',
-          gap: '32px',
-          marginTop: '60px',
-          marginBottom: '60px',
-        }}
-      >
+      <motion.div initial="initial" variants={container} animate="animate" className={styles.grid}>
         {marketingImgs.map((img, index) => (
           <motion.div variants={fadeInUp} key={img}>
             <Image
