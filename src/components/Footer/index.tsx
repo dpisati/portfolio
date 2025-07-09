@@ -30,7 +30,7 @@ export default function Footer({ isLandingPage }: FooterProps) {
         </section>
         <div>
           <Link href={isLandingPage ? '#work' : '/#work'}>
-            <a className={styles.link}>Work</a>
+            <a className={styles.link}>Projects</a>
           </Link>
           <a className={styles.link} href="mailto:dpisati@gmail.com">
             Contact
