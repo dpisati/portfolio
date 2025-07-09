@@ -68,7 +68,7 @@ export default function Header({ isLandingPage, redirectTo }: HeaderProps) {
             <a className={styles.link}>Career</a>
           </Link>
           <Link href={isLandingPage ? '#work' : '/#work'}>
-            <a className={styles.link}>Work</a>
+            <a className={styles.link}>Projects</a>
           </Link>
           <Link href={isLandingPage ? '#about' : '/#about'}>
             <a className={styles.link}>About</a>
