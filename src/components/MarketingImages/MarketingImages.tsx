@@ -31,6 +31,13 @@ export const MarketingImages = ({
         plugins={[lgThumbnail, lgZoom]}
         mode="lg-fade"
         elementClassNames={styles.gallery}
+        mobileSettings={{
+          controls: true,
+          showCloseIcon: true,
+          download: false,
+          rotate: false,
+          zoom: true,
+        }}
       >
         {marketingImgs.map((img, index) => (
           <a
