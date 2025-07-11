@@ -1,4 +1,4 @@
-import ThreeDHead from "../ThreeDHead";
+import Image from "next/image";
 import styles from "./styles.module.css";
 
 export default function Hero() {
@@ -13,7 +13,15 @@ export default function Hero() {
           </p>
         </div>
         <div className={styles.heroImgContainer}>
-          <ThreeDHead />
+
+          <Image
+            src="/assets/images/hero.png"
+            alt=""
+            width={546}
+            height={630}
+            layout="responsive"
+          />
+
         </div>
       </div>
     </div>
