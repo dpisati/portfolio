@@ -719,7 +719,7 @@ export const careerHistory: ICareerHistory[] = [
     company: 'Proworkflow',
     title: 'UX Designer and Frontend Developer',
     description:
-      'I joined Proworkflow to lead the design and actively contribute to the frontend development of their new Project Management, Time Tracker, Quote, and Invoice web and mobile apps. My role involved creating mockups from scratch to validate designs with decision-makers, as well as working hands-on with the frontend team to implement the designs, ensuring a pixel-perfect implementation.',
+      'At Proworkflow, I contributed to the redesign of their Project Management, Time Tracking, Quoting, and Invoicing web and mobile apps. My responsibilities included creating mockups to support design validation with stakeholders, and collaborating closely with the frontend team to implement the new interface, with a strong focus on visual accuracy and usability.',
     tools: ['react', 'typescript', 'graphql', 'material-ui', 'tailwind', 'playwright', 'figma'],
     url: 'https://proworkflow.com/',
     color: '#FF5733',
